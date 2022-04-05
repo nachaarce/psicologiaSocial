@@ -1,36 +1,16 @@
 * {
     box-sizing: border-box;
 }
-
 body {
-    background: radial-gradient(circle, rgba(181,221,230,1) 25%, rgba(93,159,236,1) 100%);
     background-image: url(../multimedia/psicologiaimg.jpg);
     background-size: cover;
     font-family: 'Mukta', sans-serif;
 }
-/* Menu de navegacion */
-/*GRILLA */
-.contenedor {
-    display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 70px 100px 200px 250px 50px;
-            grid-template-areas:
-                "header header"
-                "titulo titulo"
-                "section section"
-                "video video"
-                "footer footer"
-            ;
-            grid-row-gap: 10px;
-            grid-column-gap: 150px;
+/*---------------------------- Menu de navegacion ------------------------*/
+nav {
+    grid-area:nav;
 }
-header {
-    width: 100%;
-    height: 10%;
-    grid-area: header;
-    
-}
-header ul{
+nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -39,11 +19,10 @@ header ul{
     padding: 2px;
     list-style: none;
     background:radial-gradient(circle, rgba(154, 105, 172, 0.644) 25%, rgba(121, 40, 187, 0.747) 100%);
-
 }
-header a {
+nav a {
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     font-size: 20px;
     font-family: 'Mukta', sans-serif;
@@ -51,8 +30,7 @@ header a {
     text-align: center;
     border-left: solid 3px purple;
 }
-
-header a:hover {
+a:hover {
     background-image: linear-gradient(to bottom right, rgba(221, 218, 218, 0.384),rgba(221, 218, 218, 0.384));
 }
 .logo {
@@ -61,26 +39,38 @@ header a:hover {
     justify-content: center;
     flex-wrap: nowrap;
 }
-.header__logo {
+.nav__logo {
     width: 25%;
     height: 30%;
 }
-.header__parrafo {
+.nav__parrafo {
     color: white;
     font-size: 20px;
-    font-family: 'Mukta', sans-serif;
     font-weight: bold;
 }
-/*BODY*/
-/*Pagina Inicio*/
+/*---------------------------------------BODY----------------------------------*/
+/*--------------------------------GRILLA ---------------------------------*/
+.contenedor {
+    display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 60px 100px 250px 150px 40px;
+            grid-template-areas:
+                "nav"
+                "titulo"
+                "parrafo"
+                "none"
+                "footer"
+            ;
+            grid-row-gap: 10px;
+}
+/*----------------------------------Pagina Inicio--------------------*/
 .contenedor__titulo{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: center;
     color:white;
-    font-family: 'Mukta', sans-serif;
     grid-area: titulo;
-    font-size: 40px;
+    font-size: 35px;
 }
 .contenedor__titulo__dos {
     display: flex;
@@ -88,61 +78,24 @@ header a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    grid-area: section;
-    margin-left: 40px;
+    grid-area: parrafo;
     }
-
     .contenedor__titulo__dos--white {
-        padding: 20px;
+        padding: 10px;
         margin-left: 10px;
         width: 80%;
         height: 30%;
         color: white;
         text-align: center;
     }
-    /*.video {
-        border-style:  ridge;
-    }*/
-    .titulo__tres {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 90%;
-        height: 30%;
-        color: white;
-        grid-area: bio;
-    }
-    h3 {
-        padding: 20px;
-        width: 100%;
-        height: 30%;
-        margin-left: 50px;
-        font-size: 25px;
-        text-decoration: underline;
-
-    }
-    .parrafo__bio {
-        width: 100%;
-        padding: 10px;
-        margin-right: 20px;
-        border-left: solid 2px white;
-        border-right: solid 2px white;
-        font-size: 18px;
-        background: rgba(159, 112, 177, 0.753);
-    }
-    .imagenpc {
-        width: 70%;
-        height: 50%;
-    }
-    /* PÁGINA Nosotras*/
-    /*GRILLA Nosotras*/
+    /*--------------------------------- PÁGINA Nosotras----------------------*/
+    /*---------------------------------GRILLA Nosotras-------------------------*/
     .contenedornos {
             display: grid;
                     grid-template-columns: 1fr ;
-                    grid-template-rows: 100px 80px 150px 250px 100px 50px;
+                    grid-template-rows: 100px 80px 150px 250px 100px 40px;
                     grid-template-areas:
-                        "header"
+                        "nav"
                         "titulonos"
                         "parrafo"
                         "fotos"
@@ -150,9 +103,9 @@ header a:hover {
                         "footer"
                     ;
                     grid-row-gap: 20px;
-                    grid-column-gap: 150px;
-                    background: radial-gradient(circle, rgba(196, 160, 209, 0.644) 25%, rgba(177, 117, 226, 0.671) 100%);
+                    background-image: url(../multimedia/psicologiaimg.jpg);
     }
+    /*--------------------------------Contenido Nosotras----------------------*/
     .contenedor__titulonos {
         display: flex;
         flex-direction: row;
@@ -160,12 +113,14 @@ header a:hover {
         align-items: center;
         flex-wrap: nowrap;
         grid-area: titulonos;
-
     }
     .contenedor__titulonos__uno{
         color:white;
     }
-    .contenedornos__parrafo {
+    .contenedor__link {
+        color:rgb(153, 204, 224)
+    }
+    .contenedor__parrafonos {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -179,8 +134,7 @@ header a:hover {
     }
     .contenedorparrfonos__parrafo--italic {
         font-style: italic;
-        text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         color: white;
     }
     .contenedornos__fotos {
@@ -190,16 +144,15 @@ header a:hover {
         align-items: center;
         flex-wrap: wrap;
         grid-area: fotos;
+        
     }
     .contenedornos__fotomaria {
     width: 16%;
     height: 80%;
     }
-
     .contenedornos__fotolozano {
     width: 18%;
     height: 80%;
-
     }
     .contenedornos__fotogabriela {
         margin-top: 10px;
@@ -211,10 +164,10 @@ header a:hover {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        grid-area: name;
         text-align: center;
         padding: 5px 5px;
-        height: 30%;
+        height: 50%;
+        grid-area: name;
     }
     .maria {
         background: rgb(194, 142, 194);
@@ -234,73 +187,62 @@ header a:hover {
     .mariana:hover {
         background: powderblue;
     }
-    /*Contacto*/
-
-    .dudashead{
-        border: solid 2px white;
-        background-color: rgb(48, 1, 59);
-        margin: 50px 10px;
-        height: 30%;
-        width: 20%;
-        padding: 5px 20px;
-        position: relative;
-        bottom: 150px;
-        left: 350px;
+    /*-------------------------------PAGINA Contacto--------------------------*/
+    .contenedor__contacto {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .contacta-nos {
+    .contenedor__contacto__uno{
+        border-bottom: solid 2px white;
+        background-color: rgba(149, 35, 175, 0.486);
         color: white;
-        text-decoration: underline;
-        display: inline-block;
-        width: 20%;
-        height: 20%;
-        position: relative;
-        bottom: 200px;
-        left: 420px;
-    }
-    .form {
-        background-color: rgb(102, 2, 102);
-        border-style: dashed double none;
-        display: block;
-        padding: 20px 10px;
-        margin: 0 auto;
-        width: 20%;
         height: 50%;
-        position: absolute;
-        top: 450px;
-        left: 550px;
-        font-family: 'Mukta', sans-serif;
+        width: 15%;
+        text-align: center;
+        padding: 2px;
+        margin-bottom: 70px;
+    }
+    .contenedor__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        padding: 20px 10px;
+        margin-top: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(172, 32, 172, 0.507);
+        padding: 20px;
+        text-align: center;
+        margin-top: 60px;
+        color: white;
     }
     .terminos {
         font-size: 14px;
     }
     .boton {
-        width: 20%;
+        width: 25%;
         height: 10%;
-        display: inline-block;
-        position: absolute;
-        bottom: 10px;
-        right: 110px;
     }
 
-/*Servicios*/
+/*------------------------------------Pagina Servicios---------------------------*/
 .servicios{
     background-image: url(./multimedia/evalua3_640.jpg);
     width: 50%;
     height: 5%;
     margin: 80px 10px;
-    display: block;
-    position: relative;
-    left: 120px;
-    top: 100px;
 
 }
 .tituloservicio {
     font-size: 60px;
     width: 30%;
     height: 30%;
-    position: relative;
-    bottom: 220px;
-    left: 230px;
 }
 .tituloservicio-dos {
     background:none;
@@ -308,9 +250,6 @@ header a:hover {
     font-size: 40px;
     width: 40%;
     height: 10%;
-    position: relative;
-    bottom: 280px;
-    left: 200px;
 }
 .itemlist {
     margin: 40px 20px;
@@ -325,10 +264,6 @@ font-weight: bold;
 padding: 10px 10px;
 width: 50%;
 height: 5%;
-display: block;
-position:relative;
-bottom: 480px;
-left: 260px;
 }
 .itemlist:hover {
     background-image: linear-gradient(to bottom right, rgb(62, 146, 179), rgb(147, 173, 184));
@@ -339,17 +274,12 @@ left: 260px;
     color: rgb(24, 24, 24);
     background-color: rgb(255, 255, 255);
     text-align: center;
-    display: block;
-    position: relative;
-    bottom: 200px;
-    left: 620px;
     font-family:'Mukta', sans-serif;
 }
-/*Talleres*/
+/*----------------------------------Pagina Talleres--------------------*/
 li img{
     width: 100%;
     height: 20%;
-
 }
 .esilist {
     width: 50%;
@@ -392,24 +322,180 @@ li img{
     list-style: none;
 }
 
-/*Pie de pagina*/
+/*---------------------------------------FOOTER----------------------------*/
     footer {
     background: rgba(155, 214, 238, 0.445);
-    font-family:'Mukta', sans-serif ;
     grid-area: footer;
+    height: 85%;
     }
 .footer__list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items:center;
     justify-content: space-around;
     list-style-type: none;
-    text-align: left;
+    margin: 5px;
     color: rgb(255, 255, 255);
-    
 }
-
 .insta {
     text-decoration: none;
     color: rgb(34, 0, 97);
 }
+    /* -----------------------------------RESPONSIVE INICIO ---------------------*/
+    /*-------------------------------------MOVIL-------------------------------*/
+    @media screen and (max-width: 480px) {
+        .contenedor {
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 130px 60px 40px 50px;
+            grid-area: 
+            "nav"
+            "titulo"
+            "parrafo"
+            "none"
+            "footer"
+            ;
+            grid-row-gap: 5px;
+            
+        }
+        nav  ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            font-size: 5px;
+        }
+        .nav__parrafo {
+            font-size: 0px;
+        }
+        .contenedor__titulo {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            flex-direction: column;
+            align-self: center;
+            font-size: 35px;
+            margin-top: 80px;
+        }
+        .contenedor__titulo__dos {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .contenedor__titulo__dos--white {
+            font-size: 15px;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding:5px;
+        }
+        .footer__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items:flex-start;
+            justify-content: space-around;
+            list-style-type: none;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            padding: 5px 5px;
+        }
+        }
+        /*--------------------------------------TABLET----------------------------*/
+        @media screen and (max-width: 768px) {
+            .contenedor {
+                grid-template-columns: 1fr;
+                grid-template-rows: 80px 80px 250px 80px 40px;
+                grid-area: 
+                "nav"
+                "titulo"
+                "parrafo"
+                "none"
+                "footer"
+                ;
+                grid-row-gap: 5px;
+                
+            }
+            .nav__logo {
+                width: 30%;
+                height: 20%;
+            }
+            .contenedor__titulo {
+                font-size: 30px;
+            }
+            .contenedor__titulo__dos {
+                font-size: 15px;
+            }
+        }
+/*---------------------------------RESPOSIVE NOSOTRAS ----------------------------*/
+    /*-------------------------------------MOVIL-------------------------------*/
+    @media screen and (max-width: 480px) {
+        .contenedornos {
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 160px 180px 150px 120px 70px;
+            grid-area: 
+            "nav"
+            "titulonos"
+            "parrafo"
+            "fotos"
+            "name"
+            "footer"
+            ;
+            grid-row-gap: 5px;   
+        }
+        .contenedor__titulonos__uno {
+            font-size: 24px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .contenedor__titulonos {
+            display: flex;
+            flex-direction: flex-start;
+            margin-top: 25px;
+        }
+        .contenedor__parrafonos {
+            font-size: 10px;
+        }
+        .contenedorparrfonos__parrafo--italic {
+            font-size: 15px;
+            height: 20%;
+        }
+        .contenedornos__fotos {
+            margin-top: 80px;
+            height: 60%;
+        }
+    }
+    /*--------------------------------------TABLET------------------------------*/
+    @media screen and (max-width: 768px) {
+        .contenedornos {
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 160px 270px 150px 120px 40px;
+            grid-area: 
+            "nav"
+            "titulonos"
+            "parrafo"
+            "fotos"
+            "name"
+            "footer"
+            ;
+            grid-row-gap: 5px;   
+        }
+        .footer__list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items:center;
+            justify-content: space-around;
+            list-style-type: none;
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+            padding: 3px 5px;
+        }
+    }
