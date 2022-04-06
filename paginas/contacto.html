@@ -10,13 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="contenedor">
+<body class="contenedor">
     <header>
         <nav>
             <ul>
-                <li><div class="logo"><img src="../multimedia/Lggopsi.png" alt="logo" class="header__logo">
-                    <p class="header__parrafo">Piscologia Social</p></div></li>
+                <li><div class="logo"><img src="../multimedia/Lggopsi.png" alt="logo" class="nav__logo">
+                    <p class="nav__parrafo">Piscologia Social</p></div></li>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotras.html">Nosotras</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -25,35 +24,29 @@
             </ul>
         </nav>
     </header>
-    <section class="contacto1">
-    <h2 class="dudashead">¿Tenes dudas?</h2>
-    <p class="contacta-nos">Contactanos </p>
-    </section>
-    <section class="form">
+    <h2 class="contenedor__contacto__uno">Contactanos</h2>
+    <section class="contenedor__form">
     <form>
-    <label for="name" class="llenar">Nombre</label>
+    <label for="name" >Nombre</label>
     <input type="text" name="name">
-    <label for="apel"class="llenar">Apellido</label>
+    <label for="apel">Apellido</label>
     <input type="text" name="apel">
-    <label for="mail" class="llenar">Email</label>
+    <label for="mail">Email</label>
     <input type="email" name="mail">
-    <label for="tel" class="llenar">Telefono</label>
+    <label for="tel">Telefono</label>
     <input type="text" name="tel">
-    <label for="mensaje" class="llenar">Mensaje</label>
+    <label for="mensaje">Mensaje</label>
     <textarea name="mensaje" rows="5" cols="30"></textarea>
-
-    <label for="terminos" class="terminos">Acepto los Terminos y Condiciones</label>
+    <label for="terminos" class="form__terminos">Acepto los Terminos y Condiciones</label>
     <input name="terminos" type="checkbox" value="anchovy">
-
-    <input type="button" class="boton" value="Enviar">
-</div>
+    <input type="button" class="form__boton" value="Enviar">
     </form>
     </section>
     <footer>
         <ul class="footer__list">
             <li>Seguinos en <a href="https://www.instagram.com/psico.socialdelc/" target="_blank" class="insta" >instagram</a></li>
             <li>Terminos de uso</li>
-            <li>Derechos reservados</li>
+            <li>©Derechos reservados</li>
             <li><a href="/index.html" class="inicio-footer">Ir al inicio</a></li>
         </ul>
     </footer>
