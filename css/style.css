@@ -116,6 +116,7 @@ a:hover {
         flex-wrap: wrap;
         grid-area: fotos;
         
+        
     }
     .contenedornos__fotomaria {
     width: 16%;
@@ -136,9 +137,14 @@ a:hover {
         flex-wrap: wrap;
         justify-content: space-around;
         text-align: center;
-        padding: 5px 5px;
-        height: 50%;
+        padding: 20px;
         grid-area: name;
+        transition: padding, 2s;
+        transition: height, 3s;
+    }
+    .contenedornos__nombres:hover {
+        padding: 5px;
+        height: 150px;
     }
     .maria {
         background: rgb(194, 142, 194);
@@ -146,6 +152,7 @@ a:hover {
     .maria:hover {
         background: powderblue;
     }
+
     .lozano {
         background: rgb(194, 142, 194);
     }
