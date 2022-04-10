@@ -8,9 +8,9 @@ body {
     font-family: 'Mukta', sans-serif;
 }
 /*---------------------------- Menu de navegacion ------------------------*/
-nav {
+/*nav {
     grid-area:nav;
-}
+}*/
 nav ul{
     display: flex;
     flex-direction: row;
@@ -44,23 +44,23 @@ a:hover {
     height: 20%;
 }
 .nav__parrafo {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
     color: white;
     font-size: 15px;
     font-weight: bold;
 }
 /*---------------------------------------BODY----------------------------------*/
 /*----------------------------------Pagina Inicio--------------------*/
-.contenedor__titulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color:white;
-    grid-area: titulo;
-    font-size: 35px;
-}
-h1 {
+.contenedor__titulo__1{
     animation-duration: 3s;
     animation-name: bounce;
+    text-align: center;
+    font-size: 70px; 
+    color: white;
+    padding: 10px;
+    
 }
 @keyframes bounce {
     0% {
@@ -70,24 +70,57 @@ h1 {
         opacity: 1;
     }
 }
-.contenedor__titulo__dos {
+.contenedor__titulo__2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    grid-area: parrafo;
     }
-    .contenedor__titulo__dos--white {
+    .contenedor__titulo__2--white {
         padding: 10px;
         margin-left: 10px;
+        margin-bottom: 80px;
         width: 80%;
         height: 30%;
         color: white;
         text-align: center;
         animation-duration: 3s;
         animation-name: bounce;
-    }
+        font-size: 25px;
+}
+.titulos__contenido {
+    margin: 20px 20px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: bounce;
+}
+.contenido__videoparrafo {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.video {
+    margin-right: 30px;
+}
+.parrafo {
+    font-size: 20px;
+    animation-duration: 3s;
+    animation-name: bounce;
+    background-color: rgba(203, 182, 223, 0.637);
+    padding: 30px;
+    transition: padding, 2s;
+        transition: height, 3s;
+        border-left: solid 5px white;
+}
+.parrafo:hover {
+    padding: 10px;
+        height: 300px;
+}
+
+    
     /*--------------------------------- PÁGINA Nosotras----------------------*/
     /*--------------------------------Contenido Nosotras----------------------*/
     .contenedor__titulonos {
@@ -427,7 +460,7 @@ li img{
             padding: 5px 5px;
         }
         }
-        /*--------------------------------------TABLET----------------------------*/
+        /*--------------------------------------TABLET----------------------------
         @media screen and (max-width: 768px) {
             .contenedor {
                 grid-template-columns: 1fr;
@@ -525,8 +558,8 @@ li img{
             padding: 3px 5px;
         }
     }
-    /*--------------------------------GRILLA index---------------------------------*/
-.contenedor {
+    /*--------------------------------GRILLA index---------------------------------
+.contenedor (el body en HTML era el contenedor) {
     display: grid;
             grid-template-columns: 1fr ;
             grid-template-rows: 60px 100px 250px 200px 40px;
