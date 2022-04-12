@@ -14,19 +14,25 @@
 <body> 
     <div class="container-fluid">
     <header class="row">
-        <nav class="col-md-12">
-            <ul>
-                <li><div class="logo"><img src="./multimedia/Lggopsi.png" alt="logo" class="nav__logo">
-                <p class="nav__parrafo">Piscologia Social</p></div></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./paginas/nosotras.html">Nosotras</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-                <li><a href="./paginas/servicios.html">Servicios</a></li>
-                <li><a href="./paginas/talleres.html">Talleres</a></li>  
-            </ul>
-        </nav>
+      <nav class="col-md-12 navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand nav__logo" href="index.html"><img src="multimedia/Lggopsi-jota.jpg" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="./paginas/nosotras.html">Nosotras</a>
+              <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+              <a class="nav-link" href="./paginas/servicios.html">Servicios</a>
+              <a class="nav-link" href="./paginas/talleres.html">Talleres</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-        <div class="row contenedor__titulo">
+        <!--<div class="row contenedor__titulo">
         <h1 class="col-md-12 contenedor__titulo__1">Sentir, pensar y hacer.</h1>
     </div>
     <div class=" row contenedor__titulo__2">
@@ -34,13 +40,45 @@
         simultáneamente''. -Pichon Riviére.</h2>
         </div>
         <div class="row titulos__contenido">
-            <h2 class="col-md-6">¿Que hacemos?</h2>
-            <h2 class="col-md-6 pichon__rivere"> Un poco de Pichon Riviere</h2>
+            <h2 class="col-md-12">Psicologia Social</h2>
+            </div>-->
+            <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h1 class="titulo__carousel">Sentir, Pensar y hacer</h1>
+                  <img src="multimedia/psicosocial.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="row contenido__videoparrafo">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0rRCf-DAeDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-md-6 video"></iframe>
-            <p class="col-md-5 parrafo">Enrique Pichon-Rivière fue un médico psiquiatra​ argentino nacido en Suiza y francés naturalizado, considerado uno de los introductores del psicoanálisis en Argentina y generador de la teoría de grupo conocida como grupo operativo, herramienta de suma importancia en la Psicología social. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptate in dolores ratione reiciendis itaque cum numquam excepturi dicta, repellat doloremque cupiditate laborum non rem maxime, suscipit repudiandae. Illum, nam?</p>
-        </div>
+          </div>
+          <div class="row">
+          <h2 class="col-md-12 contenedor__titulo__2--white">''Aprender es contemplar de manera dialéctica el sentir, pensar y el hacer como un todo articulado que opera 
+            simultáneamente''.-Pichon Riviére.</h2>
+          </div>
+          <div class="row contenedor__bio">
+            <div class="col-md-12 contenedor__bio__titulo"><h1 class="bio__titulo">¿Quien es Pichon Rivere?</h1></div>
+            <div class="col-md-12 contenedor__bio__sub"><h2 class="bio__sub">Enrique Pichon Riviere</h2></div>
+            <div  class="col-md-12 bio__imagen"><img src="multimedia/pichon.jpg" alt="pichon" class="bio__imagen--height"></div>
+            <div class="col-md-12 contenedor__bio__parrafo"><p class="bio__parrafo">Fue un médico psiquiatra​ argentino nacido en Suiza y francés naturalizado, considerado uno de los introductores del psicoanálisis en Argentina y generador de la teoría de grupo conocida como grupo operativo, herramienta de suma importancia en la Psicología social.</p>
+              <div class="col-md-6 contenedor__moreinfo"><a href="#" class="moreinfo">Mas información</a></div>
+            </div>
+          </div>
+          </div>
             <footer class="row">
             <ul class="col-md-12 footer__list">
                 <li>Seguinos en <a href="https://www.instagram.com/psico.socialdelc/" target="_blank" class="insta">instagram</a></li>
@@ -50,26 +88,13 @@
             </ul>
     </footer>
     </div>
-
-
     <!--Estructura BASE DE BOOTSTRAP
     .container/.containerfluid
         .row 
             .col
             .col
             .col
-    
-    
-    
-    
-    
-    
-    
-    
-    
     -->
-    
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
