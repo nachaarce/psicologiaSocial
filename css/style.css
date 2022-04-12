@@ -34,6 +34,8 @@ a:hover {
     font-weight: bold;
     text-decoration: underline;
     font-family: Arial, Helvetica, sans-serif;
+    animation-duration: 3s;
+    animation-name: bounce;
 }
 
 /*---------------------------------------BODY----------------------------------*/
@@ -46,27 +48,40 @@ a:hover {
         opacity: 1;
     }
 }
+.carousel-inner .carousel-item img {
+    height:580px;
+}
     .contenedor__titulo__2--white {
-        margin-top: 15px;
+        margin-top: 30px;
         margin-bottom: 20px;
-        color: rgb(36, 33, 33);
+        color: rgb(0, 0, 0);
         text-align: center;
         animation-duration: 3s;
         animation-name: bounce;
         font-size: 25px;
 }
 .contenedor__biocontenido, .contenedor__bio {
-    background-color: rgba(90, 90, 90, 0.596);
     animation-duration: 3s;
     animation-name: bounce;
 }
 .bio__titulo, .bio__sub {
     padding: 10px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
+}
+.bio__titulo {
+    color: gray;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
 }
 .bio__sub {
     margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.contenedor__biosub, .contenedor__biocontenido {
+    background-color: rgba(90, 90, 90, 0.596);
 }
 .bio__imagen {
     width: 20%;
@@ -75,6 +90,18 @@ a:hover {
 .bio__parrafo {
     text-align: left;
     font-size: 20px;
+    }
+.contenedor__icon .icon {
+        height: 10%;
+        width: 10%;
+    }
+.contenedor__icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+.icon {
+        align-self: center;
     }
 .moreinfo {
     text-align: center;
