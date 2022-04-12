@@ -2,10 +2,7 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
 }
-body {
-    background-size: cover;
-    font-family: 'Mukta', sans-serif;
-}
+
 /*---------------------------- Menu de navegacion ------------------------*/
 .navbar a {
     display: flex;
@@ -144,19 +141,17 @@ a:hover {
         flex-wrap: wrap;
         background: rgba(185, 120, 185, 0.678);
     }
-    .contenedornos__fotomaria {
-    width: 16%;
-    height: 80%;
-    }
     .contenedornos__fotolozano {
     width: 18%;
     height: 80%;
     }
     .contenedornos__fotogabriela {
         margin-top: 10px;
-        width: 16%;
-        height: 80%;
     }
+    .contenedornos__fotomaria, .contenedornos__fotogabriela {
+    width: 16%;
+    height: 80%;
+    } 
     .contenedornos__nombres{
         display: flex;
         flex-direction: row;
