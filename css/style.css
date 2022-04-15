@@ -34,6 +34,14 @@ a:hover {
     animation-duration: 3s;
     animation-name: bounce;
 }
+.carousel__nos {
+    display: block;
+    left: 250px;
+}
+.carousel__ser {
+    display: block;
+    left: 250px;
+}
 
 /*---------------------------------------BODY----------------------------------*/
 /*----------------------------------Pagina Inicio--------------------*/
@@ -82,14 +90,14 @@ a:hover {
 }
 .bio__imagen {
     width: 20%;
-    height: 20%;
+    height: 100%;
 }
 .bio__parrafo {
     text-align: left;
     font-size: 20px;
     }
 .contenedor__icon .icon {
-        height: 10%;
+        height: 100%;
         width: 10%;
     }
 .contenedor__icon {
@@ -284,7 +292,7 @@ transition: height , 3s;
     list-style: none;
 
 }
-li img{
+.esi img{
     width: 100%;
     height: 15%;
 }
@@ -342,71 +350,15 @@ li img{
     color: rgb(34, 0, 97);
 }
     /* -----------------------------------RESPONSIVE INICIO ---------------------*/
-    /*-------------------------------------MOVIL-------------------------------
+    /*-------------------------------------MOVIL-------------------------------*/
     @media screen and (max-width: 480px) {
-        .contenedor {
-            grid-template-columns: 1fr;
-            grid-template-rows: 30px 60px 60px 100px 50px;
-            grid-area: 
-            "nav"
-            "titulo"
-            "parrafo"
-            "none"
-            "footer"
-            ;
-            grid-row-gap: 5px;
-            
+        .titulo__carousel{
+            font-size: 25px;
         }
-        nav  ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            font-size: 5px;
-        }
-        .nav__parrafo {
-            font-size: 0px;
-        }
-        .contenedor__titulo {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        h1 {
-            flex-direction: column;
-            align-self: center;
-            font-size: 40px;
-            margin-top: 80px;
-        }
-        .contenedor__titulo__dos {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            height: 50%;
-        }
-        .contenedor__titulo__dos--white {
-            font-size: 15px;
-            text-align: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding:5px;
-        }
-        .footer__list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items:flex-start;
-            justify-content: space-around;
-            list-style-type: none;
-            color: rgb(255, 255, 255);
-            font-size: 12px;
-            padding: 5px 5px;
-        }
-        }
+        .carousel-inner .carousel-item img {
+            margin-top: 35px;
+            height: 270px; }
+}
         /*--------------------------------------TABLET----------------------------
         @media screen and (max-width: 768px) {
             .contenedor {
