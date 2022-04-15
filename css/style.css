@@ -21,11 +21,8 @@ a:hover {
     margin: 0 auto;
 }
 .titulo__carousel {
-    display: inline-block;
-    position: absolute;
-    top: 200px;
-    left: 300px;
-    font-size: 70px;
+    padding-bottom: 200px;
+    font-size: 65px;
     color: rgba(255, 255, 255, 0.993);
     font-style: oblique;
     font-weight: bold;
@@ -54,7 +51,7 @@ a:hover {
     }
 }
 .carousel-inner .carousel-item img {
-    height:580px;
+    height:550px;
 }
     .contenedor__titulo__2--white {
         margin-top: 30px;
@@ -69,7 +66,18 @@ a:hover {
     animation-duration: 3s;
     animation-name: bounce;
 }
-.bio__titulo, .bio__sub {
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.bio__titulo, .bio__sub, .bio__frase {
     padding: 10px;
 }
 .bio__titulo {
@@ -79,12 +87,16 @@ a:hover {
     font-weight: bold;
     font-size: 40px;
 }
-.bio__sub {
+.bio__sub, .bio__frase {
     margin-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: bold;
 }
+.bio__frase {
+    text-align: center;
+}
+
 .contenedor__biosub, .contenedor__biocontenido {
     background-color: rgba(90, 90, 90, 0.596);
 }
@@ -108,8 +120,28 @@ a:hover {
 .icon {
         align-self: center;
     }
+.contenedor__frase .contenedor__frase__img #fraseimg {
+    height: 300px;
+    width: 300px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    margin-left: 60px;
+}
+.contenedor__informacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .moreinfo {
+    text-decoration: none;
     text-align: center;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 20%;
+    height: 10%;
 }
     
     /*--------------------------------- PÁGINA Nosotras----------------------*/
@@ -148,6 +180,7 @@ a:hover {
         align-items: center;
         flex-wrap: wrap;
         background: rgba(185, 120, 185, 0.678);
+        
     }
     .contenedornos__fotolozano {
     width: 18%;
@@ -225,7 +258,7 @@ a:hover {
 /*------------------------------------Pagina Servicios---------------------------*/
 .servicios__titulo {
     padding: 10px;
-    background-color: rgba(197, 59, 228, 0.486);
+
 }
 .servicios__titulo__uno {
     color: rgba(169, 22, 189, 0.822);
@@ -238,10 +271,6 @@ a:hover {
     text-decoration: underline;
     text-align: center;
     margin: 10px;
-}
-.lista__servicio {
-    background-color: rgba(149, 35, 175, 0.486);
-
 }
 .lista__servicio__items {
     list-style: none;
@@ -262,15 +291,11 @@ transition: height , 3s;
     background-image: linear-gradient(to bottom right, rgb(62, 146, 179), rgb(147, 173, 184));
     height: 150px;
 } 
-.servicios__quehacemos {
-    background-color: rgba(149, 35, 175, 0.486);
-}
 .contenedor__video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(149, 35, 175, 0.486);
 }
 .video {
     margin: 10px;
@@ -283,52 +308,51 @@ transition: height , 3s;
     font-family:'Mukta', sans-serif;
 }
 /*----------------------------------Pagina Talleres--------------------*/
-.contenedorlista__taller {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 10px;
-    color: white;
-    list-style: none;
-
+.contenedor__esi, .contenedor__salud, .contenedor__charla {
+    display: grid;
+    grid-template-columns: 0.20fr 0.40fr;
+    grid-template-rows: auto 60px;
+    grid-template-areas:
+    "imagen esi"
+    "imagen titulo"
+    "imagen parafo";
+    border: solid 2px skyblue;
 }
-.esi img{
-    width: 100%;
-    height: 15%;
+.esi {
+    width: 80%;
+    height: 90%;
+    grid-area: imagen;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .esi__list {
-    width: 50%;
-    height: 20%;
-    display: inline;
-    position: relative;
-    bottom: 100px;
-    left: 100px;
-    font-size: 60px;
+    margin-top: 30px;
+    font-size: 50px;
+    grid-area: esi;
+}
+.esi__sub {
+    margin-bottom: 10px;
+    grid-area: titulo;
+    
+}
+.esi__par {
+    margin: 10px;
+    grid-area: parafo;
 }
 .salud {
-    width: 100%;
-    height: 100px;
-    display: inline;
-    position: relative;
-    bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 90%;
+    grid-area: imagen;
 }
-.salud__list {
-    width: 50%;
-    height: 20%;
-    display: inline;
-    position: relative;
-    bottom: 120px;
-    left: 100px;
-    font-size: 40px;
-}
-.puzzle__list {
-    width: 50%;
-    height: 20%;
-    display: inline;
-    position: relative;
-    bottom: 100px;
-    left: 400px;
-    font-size: 40px;
+
+.puzzleblue {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 85%;
+    height: 90%;
+    grid-area: imagen;
 }
 /*---------------------------------------FOOTER----------------------------*/
     footer {
@@ -336,28 +360,40 @@ transition: height , 3s;
     height: 85%;
     }
 .footer__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items:center;
-    justify-content: space-around;
     list-style-type: none;
-    margin: 5px;
+    margin-top: 5px;
+    margin: 10px;
     color: rgb(90, 83, 83);
+    padding: 10px;
+
 }
-.insta {
-    text-decoration: none;
-    color: rgb(34, 0, 97);
+.fblogo, .iglogo {
+    width: 7%;
+    height: 7%;
 }
+li {
+    margin: 5px;
+}
+
     /* -----------------------------------RESPONSIVE INICIO ---------------------*/
     /*-------------------------------------MOVIL-------------------------------*/
-    @media screen and (max-width: 480px) {
-        .titulo__carousel{
-            font-size: 25px;
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .carousel-inner .carousel-item img {
+        height: 400px; }
+        .titulo__carousel {
+            padding-bottom: 150px;
+            padding-top:  100px;
+            font-size: 40px;}
+        .bio__parrafo {
+            font-size: 15px;
         }
-        .carousel-inner .carousel-item img {
-            margin-top: 35px;
-            height: 270px; }
+        .contenedor__frase .contenedor__frase__img #fraseimg {
+            padding-left: 10px;
+            padding-right: 90px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
 }
         /*--------------------------------------TABLET----------------------------
         @media screen and (max-width: 768px) {

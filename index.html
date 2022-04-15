@@ -33,32 +33,43 @@
       </nav>
     </header>
             <div class="row">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <h1 class="titulo__carousel">Sentir, Pensar y hacer</h1>
-                  <img src="multimedia/dinmica-de-grupos.jpg" class="d-block w-100" alt="...">
+              <div id="carouselExampleCaptions" class="col-md-12 carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-item">
-                  <h1 class="titulo__carousel">Nosotras</h1>
-                  <img src="multimedia/nosotras.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./multimedia/dinmica-de-grupos.jpg" class="d-block w-100" alt="imagenmanos">
+                    <div class="carousel-caption">
+                      <h3 class="titulo__carousel">Sentir, pensar y hacer</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/nosotras.jpg" class="d-block w-100" alt="manos">
+                    <div class="carousel-caption">
+                      <h3 class="titulo__carousel">Nosotras</h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./multimedia/personas puzzle.jpg" class="d-block w-100" alt="piezas">
+                    <div class="carousel-caption">
+                      <h3 class="titulo__carousel">Servicios</h3>
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <h1 class="titulo__carousel">Servicios</h1>
-                  <img src="multimedia/personas puzzle.jpg" class="d-block w-100" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-          </div>
-          <div class="row .contenedor__titulo__2 ">
+          <div class="row contenedor__titulo__2">
           <h2 class="col-md-12 contenedor__titulo__2--white">''Aprender es contemplar de manera dialéctica el sentir, pensar y el hacer como un todo articulado que opera 
             simultáneamente''.-Pichon Riviére.</h2>
           </div>
@@ -69,22 +80,44 @@
             <h1 class="col-md-12 bio__titulo">¿Quien es Pichon Rivere?</h1>
           </div>
           <div class="row contenedor__biosub">
-            <h2 class="col-md-12 bio__sub">Enrique Pichon Riviere</h2>
+            <h2 class="col-md-6 bio__sub">Enrique Pichon Riviere</h2>
+            <h2 class="col-md-6 bio__frase">Sus frases</h2>
           </div>
             <div class="row contenedor__biocontenido">
-            <img src="multimedia/pichon.jpg" alt="pichon" class="col-md-6 bio__imagen">
-            <p class="col-md-6 bio__parrafo">Fue un médico psiquiatra​ argentino nacido en Suiza y francés naturalizado, considerado uno de los introductores del psicoanálisis en Argentina y generador de la teoría de grupo conocida como grupo operativo, herramienta de suma importancia en la Psicología social.</p>
+            <img src="multimedia/pichon.jpg" alt="pichon" class="col-md-4 bio__imagen">
+            <p class="col-md-4 bio__parrafo">Fue un médico psiquiatra​ argentino nacido en Suiza y francés naturalizado, considerado uno de los introductores del psicoanálisis en Argentina y generador de la teoría de grupo conocida como grupo operativo, herramienta de suma importancia en la Psicología social.</p>
+            <div id="carouselExampleSlidesOnly" class="col-md-4 carousel slide" data-bs-ride="carousel">
+              <div class="contenedor__frase carousel-inner">
+                <div class="contenedor__frase__img carousel-item active">
+                  <img src="./multimedia/frase.jpeg" id="fraseimg" alt="frase">
+                </div>
+                <div class="contenedor__frase__img carousel-item">
+                  <img src="./multimedia/frase2.jpg" id="fraseimg" alt="frase">
+                </div>
+                <div class="contenedor__frase__img carousel-item">
+                  <img src="./multimedia/frase 3.jpg" id="fraseimg" alt="frase">
+                </div>
+              </div>
+            </div>
             </div>
             <div class="row contenedor__informacion">
-            <a href="paginas/contacto.html" class="col-md-12 moreinfo">Mas información</a>
+              <a href="paginas/contacto.html" class="col-md-12 btn btn-outline-secondary moreinfo">MAS INFORMACION</a>
             </div>
             <footer class="row">
-            <ul class="col-md-12 footer__list">
-                <li>Seguinos en <a href="https://www.instagram.com/psico.socialdelc/" target="_blank" class="insta">instagram</a></li>
+              <div class="col-md-6">
+            <ul class="footer__list">
+                <li>Seguinos en: </li>
+                <li><img src="./multimedia/facebook.png" alt="fblogo" class="fblogo"></li>
+                <li><a href="https://www.instagram.com/psico.socialdelc/" target="_blank" class="insta"><img src="./multimedia/instagram.png" alt="iglogo" class="iglogo"></a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="footer__list">
                 <li>Terminos de uso</li>
                 <li>©Derechos reservados</li>
                 <li><a href="index.html" class="inicio__footer">Ir al inicio</a></li>
             </ul>
+          </div>
     </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
