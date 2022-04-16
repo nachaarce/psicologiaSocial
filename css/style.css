@@ -114,8 +114,8 @@ a:hover {
     }
     .icon {
         display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 .contenedor__frase .contenedor__frase__img #fraseimg {
@@ -129,7 +129,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 .moreinfo {
@@ -175,28 +174,29 @@ a:hover {
     width: 60%;
     height: 100%;
     } 
-    .contenedornos__nombres{
-        transition: height , 3s;
+    .contenedornos__nombres {
+        margin: 5px;
     }
-    .contenedornos__nombres:hover {
-        background: skyblue;
-        height: 100px;
+    .maria, .lozano, .mariana {
+        transition: height , 2s;
     }
     .maria:hover {
         background: powderblue;
+        height: 100px;
     }
     .lozano:hover {
         background: powderblue;
+        height: 100px
     }
     .mariana:hover {
         background: powderblue;
+        height: 100px
     }
     .maria, .lozano, .mariana {
         background: rgb(194, 142, 194);
         margin:10px;
         width: 100%;
     }
-
     /*-------------------------------PAGINA Contacto--------------------------*/
     .contenedor__contacto__uno{
         border-bottom: solid 2px white;
@@ -222,15 +222,12 @@ a:hover {
         width: 10%;
         height: 100%;
     }
-
     input {
         margin: 5px;
     }
-
 /*------------------------------------Pagina Servicios---------------------------*/
 .servicios__titulo {
     padding: 10px;
-
 }
 .servicios__titulo__uno {
     color: rgba(169, 22, 189, 0.822);
@@ -281,50 +278,35 @@ transition: height , 3s;
 }
 /*----------------------------------Pagina Talleres--------------------*/
 .contenedor__esi, .contenedor__salud, .contenedor__charla {
-    display: grid;
-    grid-template-columns: 0.20fr 0.40fr;
-    grid-template-rows: auto 60px;
-    grid-template-areas:
-    "imagen esi"
-    "imagen titulo"
-    "imagen parafo";
     border: solid 2px skyblue;
 }
 .esi {
-    width: 80%;
-    height: 90%;
-    grid-area: imagen;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.esi__list {
+.taller__title {
     margin-top: 30px;
     font-size: 50px;
-    grid-area: esi;
 }
-.esi__sub {
+.taller__sub {
     margin-bottom: 10px;
-    grid-area: titulo;
-    
 }
-.esi__par {
-    margin: 10px;
-    grid-area: parafo;
+.taller__par {
+    margin-top: 5px;
+    width: 50%;
+    height: 15%;
+}
+.esi, .salud, .puzzleblue {
+    width: 20%;
+    height: 15%;
 }
 .salud {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 90%;
-    height: 90%;
-    grid-area: imagen;
 }
-
 .puzzleblue {
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 85%;
-    height: 90%;
-    grid-area: imagen;
 }
 /*---------------------------------------FOOTER----------------------------*/
     footer {
@@ -356,7 +338,8 @@ li {
         .titulo__carousel {
             padding-bottom: 150px;
             padding-top:  100px;
-            font-size: 35px;}
+            font-size: 35px;
+        }
         .bio__parrafo {
             font-size: 15px;
         }
@@ -368,30 +351,37 @@ li {
         }
 }
 @media screen and (max-width: 480px) {
+    .titulo__carousel {
+        padding-bottom: 150px;
+        padding-top:  80px;
+        font-size: 35px;
+    }
+    .form__boton {
+        width: 30%;
+    }
     /*Talleres*/
-    .moreinfo, .esi__par {
+    .moreinfo {
         font-size: 8px;
     }
-    .esi__list {
-        padding: 10px;
+    .contenedor__esi, .contenedor__salud, .contenedor__charla  {
+    height: 20%;
+    padding: 30px;
+    }
+    .taller__title{
         font-size: 20px;
     }
-    .esi__par {
-        padding: 10px;
-        margin-bottom: 20px;
+    .taller__sub {
+        font-size: 20px;
     }
-    .esi__sub {
-        padding: 10px;
-        font-size: 15px;
-    }
-    .esi__list, .esi__par, .esi__sub {
-        width:100%;
-        margin-left: 40px;
+    .taller__par {
+    font-size: 13px;
+        margin-bottom: 10px;
     }
     .esi, .salud, .puzzleblue {
-        width: 160%;
-        height: 80%;
-        padding-right: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
     }
     /*Nosotras*/
     .contenedornos__nombres {
