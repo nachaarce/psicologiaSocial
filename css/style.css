@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+
     font-family: 'Mukta', sans-serif;
 }
 
@@ -165,14 +165,15 @@ a:hover {
         
     }
     .contenedornos__fotos {
-        width: 101,99%;
         height: 100%;
         background: rgba(185, 120, 185, 0.678);
-        
     }
     .contenedornos__fotomaria, .contenedornos__fotogabriela, .contenedornos__fotolozano {
-    width: 60%;
-    height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 100%;
     } 
     .contenedornos__nombres {
         margin: 5px;
@@ -241,34 +242,11 @@ a:hover {
     text-align: center;
     margin: 10px;
 }
-.lista__servicio__items {
-    list-style: none;
-}
-.itemlist {
-background-color:rgba(28, 145, 180, 0.651);
-color: white;
-border: solid 2px white;
-list-style-type: none;
-font-size: 20px;
-text-align: start;
-font-weight: bold;
-padding: 10px;
-margin: 25px;
-transition: height , 3s;
-}
-.itemlist:hover {
-    background-image: linear-gradient(to bottom right, rgb(62, 146, 179), rgb(147, 173, 184));
-    height: 150px;
-} 
-.contenedor__video {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 .video {
-    margin: 10px;
-    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 .informacion__mas{
     text-align: center;
@@ -319,7 +297,6 @@ transition: height , 3s;
     margin: 10px;
     color: rgb(90, 83, 83);
     padding: 10px;
-
 }
 .fblogo, .iglogo {
     width: 7%;
@@ -385,108 +362,8 @@ li {
     }
     /*Nosotras*/
     .contenedornos__nombres {
-        font-size: 8px;
+        text-align: center;
+        font-size: 15px;
         width: 50%;
     }
-
-
 }
-        /*--------------------------------------TABLET----------------------------
-        @media screen and (max-width: 768px) {
-            .contenedor {
-                grid-template-columns: 1fr;
-                grid-template-rows: 80px 80px 200px 80px 40px;
-                grid-area: 
-                "nav"
-                "titulo"
-                "parrafo"
-                "none"
-                "footer"
-                ;
-                grid-row-gap: 5px;
-                
-            }
-            .nav__logo {
-                width: 20%;
-                height: 20%;
-            }
-            .contenedor__titulo {
-                font-size: 30px;
-            }
-            .contenedor__titulo__dos {
-                font-size: 15px;
-                height: 50%;
-            }
-        }
-/*---------------------------------RESPOSIVE NOSOTRAS ----------------------------*/
-    /*-------------------------------------MOVIL-------------------------------*
-    @media screen and (max-width: 480px) {
-        .contenedornos {
-            grid-template-columns: 1fr;
-            grid-template-rows: 80px 160px 180px 150px 120px 70px;
-            grid-area: 
-            "nav"
-            "titulonos"
-            "parrafo"
-            "fotos"
-            "name"
-            "footer"
-            ;
-            grid-row-gap: 5px;   
-        }
-        .contenedor__titulonos__uno {
-            font-size: 24px;
-        }
-        .contenedor__titulonos {
-            display: flex;
-            flex-direction: flex-start;
-            margin-top: 25px;
-            margin-bottom: 20px;
-        }
-        .contenedor__parrafo {
-            font-size: 15px;
-            margin-top: 20px;
-        }
-        .contenedor__parrafonos {
-            font-size: 10px;
-        }
-        .contenedorparrfonos__parrafo--italic {
-            font-size: 15px;
-            height: 20%;
-        }
-        .contenedornos__fotos {
-            margin-top: 80px;
-            height: 60%;
-        }
-    }
-    /*--------------------------------------TABLET------------------------------*
-    @media screen and (max-width: 768px) {
-        .contenedornos {
-            grid-template-columns: 1fr;
-            grid-template-rows: 80px 300px 300px 150px 120px 40px;
-            grid-area: 
-            "nav"
-            "titulonos"
-            "parrafo"
-            "fotos"
-            "name"
-            "footer"
-            ;
-            grid-row-gap: 5px;   
-        }
-        .contenedornos__fotos {
-            margin-top: 80px;
-        }
-        .footer__list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items:center;
-            justify-content: space-around;
-            list-style-type: none;
-            color: rgb(255, 255, 255);
-            font-size: 13px;
-            padding: 3px 5px;
-        }
-    }
-*/
