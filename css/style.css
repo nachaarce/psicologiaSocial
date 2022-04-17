@@ -5,10 +5,6 @@
 
 /*---------------------------- Menu de navegacion ------------------------*/
 .navbar a {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
     font-size: 18px;
     color: #f5f5f5;
 }
