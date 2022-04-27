@@ -1,6 +1,9 @@
-.navbar a {
+.navbar {
+    background: rgb(200,187,213);
+background: radial-gradient(circle, rgba(200,187,213,1) 39%, rgba(137,217,232,1) 100%);
     font-size: 18px;
     color: #ffffff;
+a {
     &:hover {
         background-image: linear-gradient(to bottom right, rgba(221, 218, 218, 0.384),rgba(221, 218, 218, 0.384));
     }
@@ -11,4 +14,5 @@
     display: block;
     margin-left: auto;
         margin-right: auto;
+}
 }

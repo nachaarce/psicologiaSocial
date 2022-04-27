@@ -1,3 +1,50 @@
 $title-font: 'Mukta', sans-serif;
 $cool-black: #000000;
 $back-ground:rgba(185, 120, 185, 0.678);
+/*---------------------------MAPS---------------------*/
+$botones: (
+    rosabtn:#F7D4BC,
+    violetbtn:#846B8A
+);
+@each $boton,$color in $botones {
+    .btn--#{$boton} {
+        background-color: $color;
+    }
+}
+
+/*------------------------------MAP GET --------------------------*/
+$estilos: (
+espacio: 10px,
+centro:center,
+colores: #CFA5B4,
+borde: solid 2px,
+letra: bold,
+estilo: italic
+);
+.servicio__uno, .servicio__dos {
+    text-align: map-get($estilos, centro);
+}
+.servicios__charla__dos, .servicios__charla   {
+    padding: map-get($estilos , espacio );
+    border: map-get($estilos , borde);
+}
+.servicios__titulo__uno {
+    font-weight: map-get($estilos , letra );
+    font-style: map-get($estilos , estilo );
+}
+/*----------------------EXTEND------------------*/
+.servicio__dos, .servicios__quehacemos__1 {
+    @extend .servicio__uno;
+}
+.servicios__charla__dos {
+    @extend .servicios__charla;
+}
+
+/*-----------------MIXINS--------------------*/
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+.btn {
+    @include sizes(15%, 40%)
+}

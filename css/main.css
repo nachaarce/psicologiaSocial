@@ -1,25 +1,59 @@
-.navbar a {
+/*---------------------------MAPS---------------------*/
+.btn--rosabtn {
+  background-color: #F7D4BC; }
+
+.btn--violetbtn {
+  background-color: #846B8A; }
+
+/*------------------------------MAP GET --------------------------*/
+.servicio__uno, .servicio__dos, .servicios__quehacemos__1, .servicio__dos {
+  text-align: center; }
+
+.servicios__charla__dos, .servicios__charla, .servicios__charla__dos {
+  padding: 10px;
+  border: solid 2px; }
+
+.servicios__titulo__uno {
+  font-weight: bold;
+  font-style: italic; }
+
+/*----------------------EXTEND------------------*/
+/*-----------------MIXINS--------------------*/
+.btn {
+  height: 40%;
+  width: 15%; }
+
+.navbar {
+  background: #c8bbd5;
+  background: radial-gradient(circle, #c8bbd5 39%, #89d9e8 100%);
   font-size: 18px;
   color: #ffffff; }
   .navbar a:hover {
     background-image: linear-gradient(to bottom right, rgba(221, 218, 218, 0.384), rgba(221, 218, 218, 0.384)); }
-
-.logo {
-  width: 30%;
-  height: 30%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  .navbar .logo {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 footer {
-  background: rgba(95, 188, 224, 0.527);
+  background: #c8bbd5;
+  background: radial-gradient(circle, #c8bbd5 39%, #89d9e8 100%);
   height: 85%; }
   footer .footer__list {
     list-style-type: none;
     margin-top: 5px;
     margin: 10px;
     color: #5a5353;
-    padding: 10px; }
+    padding: 10px;
+    margin-top: 5px;
+    margin: 10px;
+    color: #5a5353;
+    padding: 10px;
+    text-align: center;
+    height: 80%;
+    font-weight: bold; }
   footer .fblogo, footer .iglogo {
     width: 7%;
     height: 7%; }
@@ -31,6 +65,54 @@ footer {
     text-align: center;
     font-size: 15px;
     width: 50%; } }
+
+.servicio__uno, .servicio__dos, .servicios__quehacemos__1 {
+  margin: 10px;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold; }
+
+.servicios__titulo {
+  padding: 10px; }
+  .servicios__titulo .servicios__titulo__uno {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2a0d6e;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid  3px #c24772; }
+
+.servicios__charla, .servicios__charla__dos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px #CFA5B4;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  background: #eccef1bb; }
+  .servicios__charla:hover, .servicios__charla__dos:hover {
+    color: #8d253f; }
+
+.contenedor__video {
+  vertical-align: middle; }
+  .contenedor__video .video {
+    background: #CFA5B4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px #C98BB9; }
+
+.btn, .moreinfo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 * {
   font-family: "Mukta", sans-serif; }
