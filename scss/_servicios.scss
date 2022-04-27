@@ -1,0 +1,54 @@
+.servicio__uno {
+    margin: 10px;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+.servicios__titulo {
+    padding: 10px;
+    .servicios__titulo__uno {
+        font-family: Arial, Helvetica, sans-serif;
+        color:#2a0d6e;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid  3px #c24772;
+    }
+}
+.servicios__charla {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 2px #CFA5B4;
+    padding: 15px;
+    width: 50%;
+    height: 100%;
+    background: #eccef1bb;
+    &:hover {
+        color: rgb(141, 37, 63);
+    }
+    
+}
+    .contenedor__video {
+        vertical-align: middle;
+        .video {
+            background:  #CFA5B4;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 5px #C98BB9;
+            
+        }
+    }
+
+    .btn, .moreinfo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
