@@ -4,17 +4,18 @@
 
 
 /*---------------------------- Menu de navegacion ------------------------*/
-.navbar {
-    background: rgb(200,187,213);
-background: radial-gradient(circle, rgba(200,187,213,1) 39%, rgba(137,217,232,1) 100%);
+header {
+    position: sticky;
+    top:0px
 }
-.navbar a {
+.navbar {
+    position: sticky;
+    top: 0px;
+    background:#520944;
     font-size: 18px;
-    color: #ffffff;
-    
 }
 a:hover {
-    background-image: linear-gradient(to bottom right, rgba(221, 218, 218, 0.384),rgba(221, 218, 218, 0.384));
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.384),rgba(255, 255, 255, 0.384));
 }
 .logo {
     width:30%;
@@ -206,40 +207,36 @@ a:hover {
         width: 100%;
     }
     /*-------------------------------PAGINA Contacto--------------------------*/
-    .contenedor__formulario {
-        background-image: url(/multimedia/puzzleblue.jpg);
-        width: 100%;
-    }
-    .contenedor__contacto {
-        padding: 5px;
-        width: 100%;
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        padding: 10px;
+        background: #e9a5e0;
     }
     .contenedor__form {
         width: 100%;
     }
-    .contenedor__contacto__uno{
-        border-bottom: solid 2px white;
-        background-color: rgba(149, 35, 175, 0.486);
-        color: white;
-        font-size: 30px;
-        height: 100%;
-        text-align: center;
-        animation-duration: 3s;
-        animation-name: bounce;
+    .formulario__nombre, .formulario__apel, .formulario__mail, .formulario__cel {
+        width: 47%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    padding-left: 10px;
+    color: #807f7f;
+    outline: none;
     }
-    .formulario {
-        background-color: rgba(172, 32, 172, 0.507);
-        padding: 5px;
-        text-align: center;
-        color: white;
-        margin: 10px;
-    }
-    .form__terminos {
-        font-size: 13px;
+    .formulario__mensaje  {
+        width: 95.5%;
+    height: 100px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 4px;
+    border-radius: 5px;
     }
     .form__boton {
-        width: 10%;
-        height: 100%;
+        width: 90%;
+        height: 10%;
     }
     input {
         margin: 5px;
@@ -301,17 +298,18 @@ a:hover {
 }
 /*---------------------------------------FOOTER----------------------------*/
     footer {
-        background: rgb(200,187,213);
-        background: radial-gradient(circle, rgba(200,187,213,1) 39%, rgba(137,217,232,1) 100%);
     height: 85%;
+    background: #66c5eb5e;
     }
 .footer__list {
     list-style-type: none;
     margin-top: 5px;
     margin: 10px;
-    color: rgb(90, 83, 83);
+    color: rgb(0, 0, 0);
     padding: 10px;
+    font-size: 15px;
     text-align: center;
+    text-transform:capitalize;
     height: 80%;
     font-weight: bold;
 }
