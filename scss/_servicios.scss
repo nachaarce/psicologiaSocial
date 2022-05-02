@@ -1,3 +1,4 @@
+
 .servicio__uno {
     margin: 10px;
     text-align: left;
@@ -5,13 +6,15 @@
     font-weight: bold;
 }
 .servicios__titulo {
-    padding: 10px;
+    padding: 5px;
+    background: $back-ground;
+    width: auto;
     .servicios__titulo__uno {
         font-family: Arial, Helvetica, sans-serif;
         color:#2a0d6e;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: solid  3px #c24772;
     }
 }

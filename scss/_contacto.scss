@@ -1,0 +1,46 @@
+.fondo__form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(/multimedia/psicologiaimg.jpg);
+    background-size: cover;
+}
+.formulario__titulo {
+    color: white;
+    text-align: center;
+}
+.texto__formulario {
+    font-size: 40px;
+    padding-top: 50px;
+    margin-top: 100px;
+    margin-left: 30px;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+}
+.formulario {
+    background: rgba(172, 92, 172, 0.774);
+    border-radius: 1em;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 50%;
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 10px;
+        .formulario__nombre,.formulario__apel, .formulario__mail,.formulario__cel, .formulario__mensaje, .form__boton {
+            margin: 20px;
+        }
+        .form__boton {
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            padding: 5px;
+        }
+}
+}

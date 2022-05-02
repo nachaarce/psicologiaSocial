@@ -4,18 +4,12 @@
 
 
 /*---------------------------- Menu de navegacion ------------------------*/
-header {
-    position: sticky;
-    top:0px
-}
+
 .navbar {
-    position: sticky;
-    top: 0px;
-    background:#520944;
     font-size: 18px;
 }
-a:hover {
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.384),rgba(255, 255, 255, 0.384));
+.navbar-center {
+    transform: translatex(50%);
 }
 .logo {
     width:30%;

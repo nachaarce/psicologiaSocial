@@ -1,0 +1,42 @@
+.contenedor__esi, .contenedor__salud, .contenedor__charla {
+    border: solid 2px skyblue;
+    .taller__title {
+        margin-top: 30px;
+        font-size: 50px;
+    }
+    .taller__sub {
+        margin-bottom: 10px;
+    }
+    .taller__par {
+        margin-top: 5px;
+        width: 50%;
+        height: 15%;
+    }
+    .esi {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .salud {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .puzzleblue {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+.esi, .salud, .puzzleblue {
+    width: 20%;
+    height: 15%;
+    transition: all 2s;
+}
+.esi:hover {
+    width: 25%;
+    height: 20%;
+}
+.salud:hover {
+    @extend .esi:hover; 
+}
+.puzzleblue:hover {
+    @extend .esi:hover;
+}
