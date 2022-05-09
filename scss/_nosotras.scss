@@ -23,16 +23,16 @@
     }
 }
 .contenedornos__fotos {
+    display: flex;
     height: 100%;
     background: $back-ground;
     .contenedornos__fotomaria, .contenedornos__fotogabriela, .contenedornos__fotolozano {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 60%;
         width: 50%;
         height: 100%;
-        transition: all 2s;
+        transition: all 1s;
     } 
 }
 .contenedornos__fotomaria:hover{
@@ -53,10 +53,16 @@
         background: rgb(194, 142, 194);
         margin:10px;
         width: 100%;
-        transition: height , 2s;
+    }
+    .bio {
+        margin-left: 15px;
+        background:powderblue;
+        text-align:justify;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 1s all;
         &:hover {
-            background: powderblue;
-            height: 120px;
+            background: rgb(194, 142, 194);
         }
     }
 }

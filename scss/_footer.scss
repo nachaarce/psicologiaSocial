@@ -1,17 +1,36 @@
     footer {
         background: rgb(221, 221, 221);
     }
-    .footer__logos{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    .footer__logos .linklogos {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .fblogo, .iglogo{
-        display: block;
+    .icono__footer {
+        margin-top: 15px;
+        font-size: 1.5em;
         margin-left: auto;
         margin-right: auto;
-        width: 10%;
-        height: 30%;
+        padding: 5px;
+    }
+    .iglogo {
+        color: black;
+        &:hover {
+            color: $purpura;
+        }
+    }
+    .fblogo {
+        @extend .iglogo;
+        &:hover {
+            @extend .iglogo:hover;
+        }
+    }
+    .twlogo {
+        @extend .iglogo;
+        &:hover {
+            @extend .iglogo:hover;
+        }
     }
     .footer__contact {
         display: block;
@@ -20,7 +39,7 @@
     }
     .footer__lista2 {
         list-style: none;
-        text-align: left;
+        text-align: center;
         color: $gris;
         margin-top: 20px;
         padding-top: 10px;
@@ -50,6 +69,7 @@
         color: rgb(92, 90, 90);
         margin-top: 20px;
         padding-top: 10px;
+        margin-left: 25px;
         font-weight: bold;
     }
     .footer__taller {

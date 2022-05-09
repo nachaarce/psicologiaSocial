@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
+    <!--Inicio header-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
     <meta name="description" content="Somos tres profesionales egresadas de la Escuela Superior de Psicología Social">
+    <!--Titulo pagina-->
     <title>Psico Social | Conoce a nuestras profesionales</title>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <!--Animacion-->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <!--Script logos-->
+<script src="https://kit.fontawesome.com/ff338c4dd2.js" crossorigin="anonymous"></script>
+<!--CSS-->
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<!--Fin de header-->
 </head>
 <body>
     <div class="container-fluid">
         <!--Menu de navegacion-->
-        <header>
-            <div class="row">
+        <header class="row">
             <nav class="col-md-12 navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand nav__logo" href="../index.html"><img src="../multimedia/Lggopsi.png" alt="logo" class="logo"></a>
@@ -37,7 +47,6 @@
                     </div>
                 </div>
             </nav>
-            </div>
         </header>
         <!--Fin de menu de navegacion-->
         <!--Titulo principal-->
@@ -51,16 +60,16 @@
                 <div class="col-md-12"><p class="contenedorparrfonos__parrafo--italic">''En tiempos de incertidumbre y desesperanza, es imprescindible gestar proyectos colectivos desde donde planificar la esperanza junto a otros''. -Pichon Riviére</p></div>
         </div>
         <!--Fotos-->
-            <div class="row animate__animated animate__fadeInDown contenedornos__fotos">
+            <div class="row contenedornos__fotos">
         <div class="col-md-4"><img src="../multimedia/maria.png" alt="Foto Psicóloga" class="contenedornos__fotomaria"></div>
         <div class="col-md-4"><img src="../multimedia/lozano.png" alt="Foto Lozano" class="contenedornos__fotolozano"></div>
         <div class="col-md-4"><img src="../multimedia/gabriela.png"  alt="Foto Gabriela" class="contenedornos__fotogabriela"></div>
     </div>
     <!--Nombres-->
             <div class="row contenedornos__nombres">   
-            <div class="col-md-4"><p class="maria">@mariacastillo</p></div>
-            <div class="col-md-4"><p class="lozano">@lucianalozano</p></div>
-            <div class="col-md-4"><p class="col-lg-4 mariana" >@marianadueñas</p></div>
+            <div class="col-md-4 contenedor__parafo animate__animated animate__fadeInDown"><p class="maria">@mariacastillo</p><p class="bio">Nació en Lómas de Zamora, <strong>Buenos Aires</strong>. Estudió en la <strong>Escuela Nacional N° 10.</strong> Luego de esto,decidió estudiar en el <strong>Profesorado de Educación Especial</strong> logrando completar <strong>4 años de profesorado.</strong> A sus <strong>50 años</strong>, lográ cumplir su objetivo y recibirse como <strong>Psicóloga Social</strong> para poder <strong>otorgar herramientas y detectar emergentes y asi poder vivir mejor como sociedad.</strong> </p></div>
+            <div class="col-md-4 contenedor__parafo animate__animated animate__fadeInDown"><p class="lozano">@lucianalozano</p><p class="bio">Nació en Bahia Blanca, <strong>Buenos Aires</strong>. Hizo su secundario, al igual que Maria, en la <strong>Escuela Nacional N° 10.</strong> Luego, decidió seguir su camino como <strong>actriz</strong>, pero su <strong>pasión por la psicología</strong> no pudo dejarla atrás. Por eso, empezó su <strong>carrera como Psicóloga</strong> en la <strong>Universidad de Belgrano</strong> en la cual pudo recibirse y obtener el título de <strong>Lic. en Psicología.</strong></p></div>
+            <div class="col-md-4 contenedor__parafo animate__animated animate__fadeInDown"><p class="col-lg-4 mariana" >@marianadueñas</p><p class="bio">Nació en Lanús, <strong>Buenos Aires</strong> Estudió en la <strong>Escuela Secundaria Santa Teresa.</strong> Al finalizarla dicidió comenzar su camino como <strong>Psicopedagoga.</strong> Para esto, comenzó a relizar la carrera de <strong>Lic. en Educación</strong> en la <strong> Universidad del Salvador.</strong> Al finalizar esta Licenciatura, quizo seguir y hacer su carrera de <strong>Psicopedagoga</strong>, la cual finalizó y hoy en día forma un <strong>equipo</strong> junto con Maria y Luciana.</p></div>
         </div>
         <div class="row contenedor__icon">
             <div class="col-md-12"><img src="../multimedia/pieza.jpg" alt="icono" class="icon"></div>
@@ -68,23 +77,25 @@
         <!--Boton-->
         <div class="row contenedor__informacion">
             <a href="./contacto.html" class="col-md-12 btn--rosabtn btn btn-outline-secondary moreinfo">MAS INFORMACION</a>
-            
         </div>
         <!--Footer-->
         <footer class="footer__contenido row">
             <div class="lista__taller col-md-4">
             <h5 class="footer__taller">Links útiles</h5>
             <ul class="footer__lista1">
-                    <li><a href="./talleres.html" class="footerlink">ESI</a></li>
-                    <li><a href="./talleres.html" class="footerlink">Salud</a></li>
-                    <li><a href="./talleres.html" class="footerlink" >Virtual</a></li>
+                <li><a href="./contacto.html" class="footerlink">Contacto</a></li>
+                <li><a href="./servicios.html" class="footerlink">Servicios</a></li>
+                <li><a href="./talleres.html" class="footerlink" >Talleres</a></li>
             </ul>
         </div>
         <div class="lista__logos col-md-4">
             <h5 class="footer__title">Seguinos en</h5>
             <div class="footer__logos">
-            <a href="#"><img src="../multimedia/facebook.png" class="fblogo" alt="logofooter"></a>
-            <a href="https://www.instagram.com/psico.socialdelc/" target="_blank"><img src="../multimedia/instagram.png" class="iglogo" alt="logofooter"></a>
+                <ul class="linklogos">
+                    <li><a href="#"><i class="fa fa-twitter-square icono__footer twlogo"></i></a></li>
+                    <li><a href="https://www.instagram.com/psico.socialdelc/" target="_blank"><i class="fa-brands fa-instagram icono__footer iglogo"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-square icono__footer fblogo"></i></a></li>
+                </ul>
         </div>
         </div>
         <div class="lista__derechos col-md-4">

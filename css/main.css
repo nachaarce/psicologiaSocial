@@ -61,16 +61,16 @@
     color: black; }
 
 .contenedornos__fotos {
+  display: flex;
   height: 100%;
   background: rgba(185, 120, 185, 0.678); }
   .contenedornos__fotos .contenedornos__fotomaria, .contenedornos__fotos .contenedornos__fotogabriela, .contenedornos__fotos .contenedornos__fotolozano {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
     width: 50%;
     height: 100%;
-    transition: all 2s; }
+    transition: all 1s; }
 
 .contenedornos__fotomaria:hover, .contenedornos__fotogabriela:hover, .contenedornos__fotolozano:hover {
   width: 52%;
@@ -83,11 +83,16 @@
     border-radius: 10px;
     background: #c28ec2;
     margin: 10px;
-    width: 100%;
-    transition: height , 2s; }
-    .contenedornos__nombres .maria:hover, .contenedornos__nombres .lozano:hover, .contenedornos__nombres .mariana:hover {
-      background: powderblue;
-      height: 120px; }
+    width: 100%; }
+  .contenedornos__nombres .bio {
+    margin-left: 15px;
+    background: powderblue;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 1s all; }
+    .contenedornos__nombres .bio:hover {
+      background: #c28ec2; }
 
 /*---------------------------------TABLET*/
 @media screen and (max-width: 768px) {
@@ -162,7 +167,13 @@
     margin-right: auto;
     text-align: center;
     font-size: 15px;
-    width: 50%; }
+    width: 50%;
+    height: 50%; }
+  .contenedor__parafo .bio {
+    margin-left: 0px;
+    text-align: justify;
+    font-size: 15px;
+    width: 120%; }
   .contenedor__icon {
     display: none; }
   /*Pagina Contacto*/
@@ -197,7 +208,7 @@
   .taller__par {
     font-size: 13px;
     margin-bottom: 10px; }
-  .esi, .salud, .puzzleblue {
+  .esi, .contenedor__esi .salud, .contenedor__salud .salud, .contenedor__charla .salud, .contenedor__esi .puzzleblue, .contenedor__salud .puzzleblue, .contenedor__charla .puzzleblue, .salud, .puzzleblue {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -206,15 +217,16 @@
   .footer__contenido .footer__logos {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
     height: 100%; }
   .footer__logos .fblogo {
     width: 20%;
     height: 100%;
-    margin-bottom: 15px; }
-  .footer__logos .iglogo {
+    margin-bottom: 15px;
+    margin-right: 30px; }
+  .footer__logos .iglogo, .footer__logos .fblogo, .footer__logos .twlogo {
     width: 15%;
     height: 100%;
     margin-bottom: 10px; }
@@ -335,16 +347,22 @@
 .contenedor__esi, .contenedor__salud, .contenedor__charla {
   border: solid 2px skyblue; }
   .contenedor__esi .taller__title, .contenedor__salud .taller__title, .contenedor__charla .taller__title {
+    text-align: center;
     margin-top: 30px;
     font-size: 50px; }
   .contenedor__esi .taller__sub, .contenedor__salud .taller__sub, .contenedor__charla .taller__sub {
+    text-align: center;
     margin-bottom: 10px; }
   .contenedor__esi .taller__par, .contenedor__salud .taller__par, .contenedor__charla .taller__par {
+    text-align: center;
     margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     height: 15%; }
-  .contenedor__esi .esi, .contenedor__salud .esi, .contenedor__charla .esi {
-    margin-top: 10px;
+  .contenedor__esi .esi, .contenedor__esi .salud, .contenedor__esi .puzzleblue, .contenedor__salud .esi, .contenedor__salud .salud, .contenedor__salud .puzzleblue, .contenedor__charla .esi, .contenedor__charla .salud, .contenedor__charla .puzzleblue {
+    margin-left: 150px;
+    margin-top: 20px;
     margin-bottom: 20px; }
   .contenedor__esi .salud, .contenedor__salud .salud, .contenedor__charla .salud {
     margin-top: 20px;
@@ -353,29 +371,43 @@
     margin-top: 15px;
     margin-bottom: 15px; }
 
-.esi, .salud, .puzzleblue {
+.esi, .contenedor__esi .salud, .contenedor__salud .salud, .contenedor__charla .salud, .contenedor__esi .puzzleblue, .contenedor__salud .puzzleblue, .contenedor__charla .puzzleblue, .salud, .puzzleblue {
   width: 20%;
   height: 15%;
-  transition: all 2s; }
+  /* transition: all 2s;*/ }
 
-.esi:hover, .salud:hover, .puzzleblue:hover {
-  width: 25%;
-  height: 20%; }
-
+/*
+.esi:hover {
+    width: 25%;
+    height: 20%;
+}
+.salud:hover {
+    @extend .esi:hover; 
+}
+.puzzleblue:hover {
+    @extend .esi:hover;
+}
+*/
 footer {
   background: #dddddd; }
 
-.footer__logos {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+.footer__logos .linklogos {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.fblogo, .iglogo {
-  display: block;
+.icono__footer {
+  margin-top: 15px;
+  font-size: 1.5em;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
-  height: 30%; }
+  padding: 5px; }
+
+.iglogo, .fblogo, .twlogo {
+  color: black; }
+  .iglogo:hover, .fblogo:hover, .twlogo:hover {
+    color: purple; }
 
 .footer__contact {
   display: block;
@@ -384,7 +416,7 @@ footer {
 
 .footer__lista2 {
   list-style: none;
-  text-align: left;
+  text-align: center;
   color: #5c5a5a;
   margin-top: 20px;
   padding-top: 10px; }
@@ -412,6 +444,7 @@ footer {
   color: #5c5a5a;
   margin-top: 20px;
   padding-top: 10px;
+  margin-left: 25px;
   font-weight: bold; }
 
 .footer__taller {
