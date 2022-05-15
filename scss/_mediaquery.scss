@@ -1,7 +1,8 @@
 
-/*---------------------------------TABLET*/
+/*---------------------------------TABLET*-------------------*/
 
 @media screen and (max-width: 768px) {
+    /*Pagina index*/
     .carousel-inner .carousel-item img {
         height: 300px; }
         .titulo__carousel {
@@ -9,23 +10,67 @@
             padding-top:  100px;
             font-size: 20px;
         }
-        .bio__parrafo {
+        .contenedor__biocontenido .bio__parrafo {
             font-size: 15px;
         }
-        .contenedor__frase .contenedor__frase__img #fraseimg {
-            padding-left: 10px;
-            padding-right: 90px;
-            margin-right: 20px;
-            margin-left: 20px;
+        /*Biografia*/
+        .contenedor__biosub{
+            .bio__frase {
+                text-align: right;
+            }
+        }
+            .carousel{
+            .carousel-inner {
+                height: 80%;
+                .carousel-item {
+                    .fraseimg {
+                        padding-right: 90px;
+                    }
+                }
+            }
         }
         .carousel-caption .btn-light {
             width: 20%;
             font-size: 15px;
         }
+        .contenedor__informacion .moreinfo {
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+        }
+/*Pagina  talleres*/
+.contenedor__imagenes {
+.esi, .salud, .puzzleblue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 15%;
+}
+}
+.contenedor__talleres{
+.contenedor__texto {
+    border: solid 1px skyblue;
+    .taller__title {
+        font-size: 35px;
+    }
+    .taller__sub {
+        font-size: 22px;
+    }
+    .taller__par {
+        font-size: 15px;
+    }
+}
+}
+
 }
 /*-----------------------------MOBILE-------------------------*/
 @media screen and (max-width: 480px) {
     /*Pagina INICIO*/
+    /*Logo*/ 
+    .logo {
+        width: 25%;
+        margin-left: 125px;
+    }
     /*Carousel*/
     .carousel-item {
         height: 350px; 
@@ -57,31 +102,37 @@
         width: 100%;
     }
     /*Biografia*/
-    .contenedor__bio .bio__titulo {
+    .contenedor__bio {
+        .bio__titulo{
+            margin-left: 10px;
         font-size: 30px;
     }
+    }
     .contenedor__biosub {
-        .bio__sub, .bio__frase {
+        .bio__sub{
+            text-align: center;
             font-size: 20px;
         }
-        .bio__sub {
-            text-align: center;
+        .bio__frase {
+            display: none;
         }
     }
-.contenedor__biocontenido .bio__parrafo {
+.contenedor__biocontenido {
+    .bio__parrafo {
     font-size: 15px;
-}
+    }
 .bio__imagen {
     display: none;
-}
-.contenedor__frase .contenedor__frase__img #fraseimg {
-    padding-left: 55px;
-    padding-right: 25px;
-    margin-right: 20px;
-    margin-left: 20px;
+    }
+    .carousel{
+        .carousel-inner {
+            display: none;
+            }
+        }
 }
 /*MAS INFORMACION button*/
 .contenedor__informacion .moreinfo {
+    font-size: 10px;
     width: 20%;
     padding: 10px;
 }
@@ -89,7 +140,6 @@
 
 /*Pagina Nosotras*/ 
 .contenedornos__nombres  {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -103,7 +153,6 @@
         font-size: 15px;
         width: 120%;
 }
-
 .contenedor__icon {
     display: none;
 }
@@ -122,13 +171,15 @@
         width: 30%;
     }
     /*Pagina Servicios */
-    .servicios__titulo{
-        font-size: 20px ;
-        width: auto ;
+        .servicios__titulo {
+        font-size: 30px;
+        }
+    .servicios__titulo__contenido{
+        font-size: 20px;
     }
-    .servicios__titulo__uno {
-        text-align: center;
-            }
+    div .servicios__charla {
+        font-size: 15px;
+    }
     .video {
         width: auto;
     }
@@ -136,67 +187,55 @@
     .moreinfo {
         font-size: 10px;
     }
-    .contenedor__esi, .contenedor__salud, .contenedor__charla  {
+    .contenedor__talleres {
     height: 20%;
-    padding: 30px;
-    }  
-    .taller__title {
-        font-size: 30px !important;
-    }
-    .taller__sub {
-        font-size: 20px;
-    }
-    .taller__par {
-    font-size: 13px;
+    padding: 5px;
+    .contenedor__texto {
+        background: rgb(236, 183, 236);
         margin-bottom: 10px;
+        border: solid 2px skyblue;;
+        .taller__title {
+            font-size: 30px;
+        }
+        .taller__sub {
+            font-size: 20px;
+        }
+        .taller__par {
+        font-size: 13px;
+            margin-bottom: 20px;
+        }
+    } 
+    } 
+    .contenedor__imagenes  {
+        .esi, .salud, .puzzleblue {
+        display: none;
     }
-    .esi, .salud, .puzzleblue {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30% !important;
     }
     /*FOOTER*/
-    .footer__contenido .footer__logos {
+        /*Links utiles*/
+            .footer__lista1 {
+        margin-right: 20px;
+    }
+    /*Logos*/
+    .lista__logos {
+    .footer__logos {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: flex-start;
-        width: 100%;
-        height: 100%;
+        .linklogos {
+            margin-right: 10px;
+        }
     }
-    .footer__logos .fblogo {
-        width: 20%; 
-        height: 100%;
-        margin-bottom: 15px;
-        margin-right: 30px;
-    } 
-    .footer__logos .iglogo {
-            width: 15%; 
-            height: 100%;
-            margin-bottom: 10px;
-        
-    }
-    .footer__contenido .footer__title {
+    .footer__tiulo__logos {
         text-align: center;
-        margin: 30px;
-    }
-    .footer__contenido .footer__taller {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-    .footer__taller, .footer__title {
+        margin: 5px;
         font-size: 18px;
     }
-    .footer__contenido .footer__lista1 li{
-        margin-right: 30px;
+}
+    /*Terminos y condiciones*/
+    .footer__lista2 li {
         text-align: center;
-    }
-    .footer__contenido .footer__lista2 li {
-        text-align: center;
-    }
-    .footer__lista1 .footerlink {
-        font-size: 15px;
     }
     .lista__taller, .lista__logos, .lista__derechos {
         border-top: solid 2px white;

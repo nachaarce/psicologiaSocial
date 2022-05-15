@@ -1,36 +1,43 @@
-
-.servicio__uno {
-    margin: 10px;
-    text-align: left;
-    font-style: italic;
-    font-weight: bold;
-}
-.servicios__titulo {
-    padding: 5px;
-    background: $back-ground;
-    width: auto;
-    .servicios__titulo__uno {
+    .servicios__titulo {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
         font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: bold;
         color:#2a0d6e;
-    font-size: 30px;
     text-align: center;
     padding-bottom: 5px;
     border-bottom: solid  3px #c24772;
     }
+
+.servicios__titulo__contenido {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 .servicios__charla {
-    display: block;
+    border:solid 2px #CFA5B4;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border:solid 2px #CFA5B4;
     padding: 15px;
-    width: 50%;
+    width: 40%;
     height: 100%;
+    font-size: 20px;
+    border-radius: 10px;
     background: #eccef1bb;
     &:hover {
         color: rgb(141, 37, 63);
     }
-    
+}
+.servicios__entrevistas {
+    @extend .servicios__charla;
+}
+.servicios__titulo__video {
+    @extend .servicios__titulo__contenido;
+    margin-bottom: 20px;
+
 }
     .contenedor__video {
         vertical-align: middle;
@@ -40,7 +47,7 @@
             margin-left: auto;
             margin-right: auto;
             border: solid 5px #C98BB9;
-            
+            margin-bottom: 30px;
         }
     }
 

@@ -1,4 +1,4 @@
-.contenedor__esi, .contenedor__salud, .contenedor__charla {
+.contenedor__talleres {
     border: solid 2px skyblue;
     .taller__title {
         text-align: center;
@@ -6,42 +6,51 @@
         font-size: 50px;
     }
 .taller__sub {
-    text-align: center;
+        text-align: center;
         margin-bottom: 10px;
+        padding: 5px;
     }
     .taller__par {
-        text-align: center;
-        margin-top: 5px;
+        text-align:justify;
+        margin-top: 10px;   
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 80%;
         height: 15%;
     }
-    .esi {
-        margin-left: 150px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .salud {
-        @extend .esi;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .puzzleblue {
-        @extend .esi;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
 }
+.contenedor__imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contenedor__imagenes .esi {
+    margin-left: 50px;
+    margin-right: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.salud {
+    @extend .esi;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.puzzleblue {
+    @extend .esi;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .esi, .salud, .puzzleblue {
-    width: 20%;
-    height: 15%;
-   /* transition: all 2s;*/
+width: 20%;
+height: 15%;
+transition: all 1s;
 }
-/*
+
 .esi:hover {
-    width: 25%;
-    height: 20%;
+    width: 21%;
+    height: 18%;
 }
 .salud:hover {
     @extend .esi:hover; 
@@ -49,4 +58,3 @@
 .puzzleblue:hover {
     @extend .esi:hover;
 }
-*/

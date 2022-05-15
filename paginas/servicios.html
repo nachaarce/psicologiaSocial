@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!--Inicio head-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
     <meta name="description" content="Sumate a nuestros talleres de Psicología Social! ¿Cuál es la función de la psicología social? El Psicólogo de la Intervención Social trata de generar o mejorar aquellas capacidades y habilidades para que las personas, grupos, instituciones y comunidades, puedan analizar mejor su realidad social.">
     <meta name="keywords" content="psicologia, salud, estudio, talleres, social, servicios, informacion">
+    <!--Titulo pagina-->
     <title>Psico Social | Servicios que ofrecemos</title>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <!--Animacion-->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Script logos-->
 <script src="https://kit.fontawesome.com/ff338c4dd2.js" crossorigin="anonymous"></script>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+<!--Fin de head-->
 </head>
 <body>
     <div class="container-fluid">
@@ -41,36 +49,74 @@
           </nav>
     </header>
     <!--Fin de menu de navegacion-->
-        <!--Titulo-->
-        <div class="row servicios__titulo">
-        <h1 class="col-md-12 col-xs-8 animate__animated animate__fadeInLeft servicios__titulo__uno">Servicios que ofrecemos
-        </h1>
+      <!--Servicios titulos-->
+      <div class="row">
+        <div id="carouselExampleCaptions" class="col-md-12 carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../multimedia/terapia-grupo-t.jpg" class="w-100" alt="grupo">
+              <div class="carousel-caption">
+                <h3 class="titulo__carousel">Charlas informativas</h3>
+                <a href="#charlas"class="btn btn-light">VER MAS</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/puzzleblue.jpg" class="w-100" alt="piezazul">
+              <div class="carousel-caption">
+                <h3 class="titulo__carousel">Entrevistas a instituciones</h3>
+                <a href="#entrevista"class="btn btn-light">VER MAS</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/puzzle psico.jpg" class="w-100" alt="piezas">
+              <div class="carousel-caption">
+                <h3 class="titulo__carousel">¿Que hacemos?</h3>
+                <a href="#video"class="btn btn-light">VER MAS</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <!--Contenido -->
-        <div class="row servicios">
-          <h2 class="col-md-6 col-xs-8 animate__animated animate__fadeInLeft servicio__uno">Charlas de información</h2>
-          <div class="col-md-6 col-xs-8 "><p class="animate__animated animate__fadeInLeft servicios__charla">Nos orientamos  hacia aquellos que necesiten información acerca de Educación Integral Sexual, violencia de género, y otros temas relacionados a los grupos.
-            Horarios: Lunes y Miércoles de 18 a 20hs
-          </p></div>
+      </div>
+      <!--Boton puzzle-->
+      <div class="row contenedor__icon">
+        <div id="servicio" class="col-md-12"><a href="./servicios.html"><img src="../multimedia/pieza.jpg" alt="icono" class="icon"></a>
+      </div>
+      </div>
+      <!--Titulo Servicios-->
+        <h1 class="servicios__titulo row">Nuestros Servicios</h1>
+      <!--Servicios contenido-->
+      <div class="row ">
+        <h3 id="charlas" class="col-md-6 col-xs-6 servicios__titulo__contenido">Charlas de información</h3>
+        <h3 id="entrevista" class="col-md-6 col-xs-6 servicios__titulo__contenido">Entrevistas a instituciones</h3>
+      </div>
+        <!--Servicios contenido-->
+        <div class="row">
+          <p class="col-md-6 col-xs-6 servicios__charla">Nos orientamos  hacia aquellos que necesiten información acerca de Educación Integral Sexual, violencia de género, y otros temas relacionados a los grupos.
+          <strong>Horarios: Lunes y Miércoles de 18 a 20hs.</strong></p>
+          <p class="col-md-6 col-xs-6 servicios__entrevistas">Acercamos nuestros conocimientos hacia instituciones, empresas y clubes para poder detectar el emergente y otorgar herramientas para vivir mejor como sociedad. <strong>Horarios: Martes y Jueves de 15 a 17hs.</strong></p>
         </div>
         <div class="row">
-        <h3 class="col-md-12 col-xs-8 animate__animated animate__fadeInLeft servicio__dos">Entrevistas en instituciones, empresas y clubes.</h3>
-        <div class="col-md-6 col-xs-8">
-          <p class="animate__animated animate__fadeInLeft servicios__charla__dos">Acercamos nuestro conocimientos hacia instituciones, empresas y clubes para poder detectar el emergente. </p>
-          </div>
-      </div>
-        <!--Otro titulo, video youtube-->
-                  <div class="row">
-                      <h3 class="col-md-12 col-xs-8 servicios__quehacemos animate__animated animate__fadeInUp servicios__quehacemos__1">¿Que hacemos?</h3>
-                      <div class="col-md-6 col-xs-8 contenedor__video">
-                        <iframe width="420" height="215" src="https://www.youtube.com/embed/0rRCf-DAeDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                    </div>
-                    </div>
-                      
-        <!--Boton-->
+        <h3 class="col-md-12 servicios__titulo__video">Te contamos sobre nuestra profesión en este video:</h3>
+        </div>
+        <div class="row contenedor__video">
+          <iframe id="video" width="420" height="215" src="https://www.youtube.com/embed/0rRCf-DAeDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-md-4 col-xs-4 video"></iframe>
+        </div>
         <div class="row contenedor__informacion">
           <a href="./contacto.html" class="col-md-12 btn--rosabtn btn btn-outline-secondary moreinfo">MAS INFORMACION</a>
-        </div>
+      </div>
         <!--Footer-->
         <footer class="footer__contenido row">
           <div class="lista__taller col-md-4">

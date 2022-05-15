@@ -9,7 +9,7 @@
 .servicio__uno, .servicio__dos, .servicios__quehacemos__1, .servicio__dos {
   text-align: center; }
 
-.servicios__charla__dos, .servicios__charla, .servicios__charla__dos {
+.servicios__charla__dos, .servicios__charla, .servicios__charla__dos, .servicios__entrevistas {
   padding: 10px;
   border: solid 2px; }
 
@@ -24,6 +24,7 @@
   width: 15%; }
 
 .navbar {
+  text-align: center;
   font-size: 18px; }
 
 .nav-link {
@@ -45,6 +46,8 @@
   background: rgba(185, 120, 185, 0.678);
   font-family: "Mukta", sans-serif; }
   .contenedor__titulonos .contenedor__titulonos__uno {
+    margin-top: 5px;
+    text-align: center;
     color: #000000;
     font-family: 'Mukta', sans-serif; }
   .contenedor__titulonos .contenedor__link {
@@ -73,8 +76,8 @@
     transition: all 1s; }
 
 .contenedornos__fotomaria:hover, .contenedornos__fotogabriela:hover, .contenedornos__fotolozano:hover {
-  width: 52%;
-  height: 100%; }
+  width: 51%;
+  height: 101%; }
 
 .contenedornos__nombres {
   text-align: center;
@@ -84,38 +87,70 @@
     background: #c28ec2;
     margin: 10px;
     width: 100%; }
-  .contenedornos__nombres .bio {
-    margin-left: 15px;
+
+.contenedor__parafo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .contenedor__parafo .bio {
+    width: 30%;
+    margin-left: 10px;
     background: powderblue;
     text-align: justify;
     padding: 20px;
     border-radius: 10px;
     transition: 1s all; }
-    .contenedornos__nombres .bio:hover {
+    .contenedor__parafo .bio:hover {
       background: #c28ec2; }
 
-/*---------------------------------TABLET*/
+/*---------------------------------TABLET*-------------------*/
 @media screen and (max-width: 768px) {
+  /*Pagina index*/
   .carousel-inner .carousel-item img {
     height: 300px; }
   .titulo__carousel {
     padding-bottom: 100px;
     padding-top: 100px;
     font-size: 20px; }
-  .bio__parrafo {
+  .contenedor__biocontenido .bio__parrafo {
     font-size: 15px; }
-  .contenedor__frase .contenedor__frase__img #fraseimg {
-    padding-left: 10px;
-    padding-right: 90px;
-    margin-right: 20px;
-    margin-left: 20px; }
+  /*Biografia*/
+  .contenedor__biosub .bio__frase {
+    text-align: right; }
+  .carousel .carousel-inner {
+    height: 80%; }
+    .carousel .carousel-inner .carousel-item .fraseimg {
+      padding-right: 90px; }
   .carousel-caption .btn-light {
     width: 20%;
-    font-size: 15px; } }
+    font-size: 15px; }
+  .contenedor__informacion .moreinfo {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px; }
+  /*Pagina  talleres*/
+  .contenedor__imagenes .esi, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 15%; }
+  .contenedor__talleres .contenedor__texto {
+    border: solid 1px skyblue; }
+    .contenedor__talleres .contenedor__texto .taller__title {
+      font-size: 35px; }
+    .contenedor__talleres .contenedor__texto .taller__sub {
+      font-size: 22px; }
+    .contenedor__talleres .contenedor__texto .taller__par {
+      font-size: 15px; } }
 
 /*-----------------------------MOBILE-------------------------*/
 @media screen and (max-width: 480px) {
   /*Pagina INICIO*/
+  /*Logo*/
+  .logo {
+    width: 25%;
+    margin-left: 125px; }
   /*Carousel*/
   .carousel-item {
     height: 350px; }
@@ -141,28 +176,27 @@
     width: 100%; }
   /*Biografia*/
   .contenedor__bio .bio__titulo {
+    margin-left: 10px;
     font-size: 30px; }
-  .contenedor__biosub .bio__sub, .contenedor__biosub .bio__frase {
-    font-size: 20px; }
   .contenedor__biosub .bio__sub {
-    text-align: center; }
+    text-align: center;
+    font-size: 20px; }
+  .contenedor__biosub .bio__frase {
+    display: none; }
   .contenedor__biocontenido .bio__parrafo {
     font-size: 15px; }
-  .bio__imagen {
+  .contenedor__biocontenido .bio__imagen {
     display: none; }
-  .contenedor__frase .contenedor__frase__img #fraseimg {
-    padding-left: 55px;
-    padding-right: 25px;
-    margin-right: 20px;
-    margin-left: 20px; }
+  .contenedor__biocontenido .carousel .carousel-inner {
+    display: none; }
   /*MAS INFORMACION button*/
   .contenedor__informacion .moreinfo {
+    font-size: 10px;
     width: 20%;
     padding: 10px; }
   /*FIN DE PAGINA INICIO*/
   /*Pagina Nosotras*/
   .contenedornos__nombres {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -189,62 +223,51 @@
     width: 30%; }
   /*Pagina Servicios */
   .servicios__titulo {
-    font-size: 20px;
-    width: auto; }
-  .servicios__titulo__uno {
-    text-align: center; }
+    font-size: 30px; }
+  .servicios__titulo__contenido, .servicios__titulo__video {
+    font-size: 20px; }
+  div .servicios__charla, div .servicios__charla__dos, div .servicios__entrevistas {
+    font-size: 15px; }
   .video {
     width: auto; }
   /*Pagina Talleres*/
   .moreinfo {
     font-size: 10px; }
-  .contenedor__esi, .contenedor__salud, .contenedor__charla {
+  .contenedor__talleres {
     height: 20%;
-    padding: 30px; }
-  .taller__title {
-    font-size: 30px !important; }
-  .taller__sub {
-    font-size: 20px; }
-  .taller__par {
-    font-size: 13px;
-    margin-bottom: 10px; }
-  .esi, .contenedor__esi .salud, .contenedor__salud .salud, .contenedor__charla .salud, .contenedor__esi .puzzleblue, .contenedor__salud .puzzleblue, .contenedor__charla .puzzleblue, .salud, .puzzleblue {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30% !important; }
+    padding: 5px; }
+    .contenedor__talleres .contenedor__texto {
+      background: #ecb7ec;
+      margin-bottom: 10px;
+      border: solid 2px skyblue; }
+      .contenedor__talleres .contenedor__texto .taller__title {
+        font-size: 30px; }
+      .contenedor__talleres .contenedor__texto .taller__sub {
+        font-size: 20px; }
+      .contenedor__talleres .contenedor__texto .taller__par {
+        font-size: 13px;
+        margin-bottom: 20px; }
+  .contenedor__imagenes .esi, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue {
+    display: none; }
   /*FOOTER*/
-  .footer__contenido .footer__logos {
+  /*Links utiles*/
+  .footer__lista1 {
+    margin-right: 20px; }
+  /*Logos*/
+  .lista__logos .footer__logos {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%; }
-  .footer__logos .fblogo {
-    width: 20%;
-    height: 100%;
-    margin-bottom: 15px;
-    margin-right: 30px; }
-  .footer__logos .iglogo, .footer__logos .fblogo, .footer__logos .twlogo {
-    width: 15%;
-    height: 100%;
-    margin-bottom: 10px; }
-  .footer__contenido .footer__title, .footer__contenido .footer__taller {
+    justify-content: space-evenly;
+    align-items: flex-start; }
+    .lista__logos .footer__logos .linklogos {
+      margin-right: 10px; }
+  .lista__logos .footer__tiulo__logos {
     text-align: center;
-    margin: 30px; }
-  .footer__contenido .footer__taller {
-    margin-bottom: 0px;
-    padding-bottom: 0px; }
-  .footer__taller, .footer__title, .footer__taller {
+    margin: 5px;
     font-size: 18px; }
-  .footer__contenido .footer__lista1 li {
-    margin-right: 30px;
+  /*Terminos y condiciones*/
+  .footer__lista2 li {
     text-align: center; }
-  .footer__contenido .footer__lista2 li {
-    text-align: center; }
-  .footer__lista1 .footerlink {
-    font-size: 15px; }
   .lista__taller, .lista__logos, .lista__derechos {
     border-top: solid 2px white; }
   .lista__derechos .footer__lista2 {
@@ -294,35 +317,39 @@
       width: 30%;
       padding: 5px; }
 
-.servicio__uno, .servicio__dos, .servicios__quehacemos__1 {
-  margin: 10px;
-  text-align: left;
+.servicios__titulo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
+  font-weight: bold;
+  color: #2a0d6e;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: solid  3px #c24772; }
+
+.servicios__titulo__contenido, .servicios__titulo__video {
+  margin-top: 10px;
+  text-align: center;
   font-weight: bold; }
 
-.servicios__titulo {
-  padding: 5px;
-  background: rgba(185, 120, 185, 0.678);
-  width: auto; }
-  .servicios__titulo .servicios__titulo__uno {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #2a0d6e;
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 5px;
-    border-bottom: solid  3px #c24772; }
-
-.servicios__charla, .servicios__charla__dos {
-  display: block;
+.servicios__charla, .servicios__charla__dos, .servicios__entrevistas {
+  border: solid 2px #CFA5B4;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  border: solid 2px #CFA5B4;
   padding: 15px;
-  width: 50%;
+  width: 40%;
   height: 100%;
+  font-size: 20px;
+  border-radius: 10px;
   background: #eccef1bb; }
-  .servicios__charla:hover, .servicios__charla__dos:hover {
+  .servicios__charla:hover, .servicios__charla__dos:hover, .servicios__entrevistas:hover {
     color: #8d253f; }
+
+.servicios__titulo__video {
+  margin-bottom: 20px; }
 
 .contenedor__video {
   vertical-align: middle; }
@@ -331,7 +358,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: solid 5px #C98BB9; }
+    border: solid 5px #C98BB9;
+    margin-bottom: 30px; }
 
 .btn, .moreinfo {
   display: block;
@@ -344,101 +372,84 @@
   margin-top: 30px;
   margin-bottom: 30px; }
 
-.contenedor__esi, .contenedor__salud, .contenedor__charla {
+.contenedor__talleres {
   border: solid 2px skyblue; }
-  .contenedor__esi .taller__title, .contenedor__salud .taller__title, .contenedor__charla .taller__title {
+  .contenedor__talleres .taller__title {
     text-align: center;
     margin-top: 30px;
     font-size: 50px; }
-  .contenedor__esi .taller__sub, .contenedor__salud .taller__sub, .contenedor__charla .taller__sub {
+  .contenedor__talleres .taller__sub {
     text-align: center;
-    margin-bottom: 10px; }
-  .contenedor__esi .taller__par, .contenedor__salud .taller__par, .contenedor__charla .taller__par {
-    text-align: center;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px; }
+  .contenedor__talleres .taller__par {
+    text-align: justify;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
     height: 15%; }
-  .contenedor__esi .esi, .contenedor__esi .salud, .contenedor__esi .puzzleblue, .contenedor__salud .esi, .contenedor__salud .salud, .contenedor__salud .puzzleblue, .contenedor__charla .esi, .contenedor__charla .salud, .contenedor__charla .puzzleblue {
-    margin-left: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .contenedor__esi .salud, .contenedor__salud .salud, .contenedor__charla .salud {
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .contenedor__esi .puzzleblue, .contenedor__salud .puzzleblue, .contenedor__charla .puzzleblue {
-    margin-top: 15px;
-    margin-bottom: 15px; }
 
-.esi, .contenedor__esi .salud, .contenedor__salud .salud, .contenedor__charla .salud, .contenedor__esi .puzzleblue, .contenedor__salud .puzzleblue, .contenedor__charla .puzzleblue, .salud, .puzzleblue {
+.contenedor__imagenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.contenedor__imagenes .esi, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue {
+  margin-left: 50px;
+  margin-right: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.salud {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.puzzleblue {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.esi, .salud, .puzzleblue, .salud, .puzzleblue {
   width: 20%;
   height: 15%;
-  /* transition: all 2s;*/ }
+  transition: all 1s; }
 
-/*
-.esi:hover {
-    width: 25%;
-    height: 20%;
-}
-.salud:hover {
-    @extend .esi:hover; 
-}
-.puzzleblue:hover {
-    @extend .esi:hover;
-}
-*/
+.esi:hover, .salud:hover, .puzzleblue:hover {
+  width: 21%;
+  height: 18%; }
+
 footer {
   background: #dddddd; }
 
-.footer__logos .linklogos {
-  list-style: none;
+/*Links utiles*/
+.lista__links .footer__links {
+  margin-left: 30px; }
+
+.footer__lista1 {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none; }
+  .footer__lista1 li {
+    text-align: center;
+    padding-top: 10px;
+    list-style: none;
+    color: #5c5a5a;
+    font-weight: bold;
+    font-size: 16px; }
+  .footer__lista1 .footerlink {
+    padding: 3px;
+    margin: 2px;
+    text-decoration: none;
+    color: #5c5a5a;
+    font-weight: bold; }
+    .footer__lista1 .footerlink:hover {
+      color: purple; }
 
-.icono__footer {
-  margin-top: 15px;
-  font-size: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px; }
-
-.iglogo, .fblogo, .twlogo {
-  color: black; }
-  .iglogo:hover, .fblogo:hover, .twlogo:hover {
-    color: purple; }
-
-.footer__contact {
-  display: block;
-  text-align: center;
-  font-size: 20px; }
-
-.footer__lista2 {
-  list-style: none;
-  text-align: center;
-  color: #5c5a5a;
-  margin-top: 20px;
-  padding-top: 10px; }
-
-.footer__lista1 li {
-  text-align: center;
-  padding-top: 10px;
-  list-style: none;
-  color: #5c5a5a;
-  font-weight: bold;
-  font-size: 18px; }
-
-.footerlink {
-  padding: 3px;
-  margin: 2px;
-  text-decoration: none;
-  color: #5c5a5a;
-  font-weight: bold; }
-  .footerlink:hover {
-    color: purple; }
-
-.footer__title, .footer__taller {
+/*Logos*/
+.footer__titulo__logos, .lista__links .footer__links {
   text-decoration: underline;
   text-align: center;
   color: #5c5a5a;
@@ -447,8 +458,31 @@ footer {
   margin-left: 25px;
   font-weight: bold; }
 
-.footer__taller {
-  margin-left: 30px; }
+.footer__logos .linklogos {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__logos .icono__footer {
+  margin-top: 6px;
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px; }
+
+.footer__logos .iglogo, .footer__logos .fblogo, .footer__logos .twlogo {
+  color: black; }
+  .footer__logos .iglogo:hover, .footer__logos .fblogo:hover, .footer__logos .twlogo:hover {
+    color: purple; }
+
+/*Terminos y condiciones*/
+.footer__lista2 {
+  list-style: none;
+  text-align: center;
+  color: #5c5a5a;
+  margin-top: 20px;
+  padding-top: 10px; }
 
 .inicio__footer {
   color: #5c5a5a; }
@@ -458,7 +492,9 @@ footer {
 * {
   font-family: "Mukta", sans-serif; }
 
-/*-------------------ICON BODY------------------*/
+/*-------------------Pagina Inicio ------------*/
+/*-------------------BODY------------------*/
+/*-Carousel-*/
 .titulo__carousel {
   padding-bottom: 150px;
   font-size: 65px;
@@ -467,9 +503,9 @@ footer {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   animation-duration: 3s;
-  animation-name: bounce; }
+  animation-name: fadeIn; }
 
-@keyframes bounce {
+@keyframes fadeIn {
   0% {
     opacity: 0; }
   100% {
@@ -490,6 +526,7 @@ footer {
     color: #fff;
     text-align: center; }
 
+/*-Boton Ver mas -*/
 .btn-light {
   position: relative;
   vertical-align: top;
@@ -502,6 +539,7 @@ footer {
   border-radius: 0.25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 
+/*-Frase-*/
 .contenedor__titulo__2--white {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -511,6 +549,7 @@ footer {
   animation-name: bounce;
   font-size: 25px; }
 
+/*-Icono puzzle-*/
 .contenedor__icon .icon {
   height: 100%;
   width: 10%;
@@ -518,15 +557,22 @@ footer {
   margin-left: auto;
   margin-right: auto; }
 
-.bio__titulo, .bio__sub, .bio__frase {
+/*--Biografia Pichon Riviere--*/
+.bio__titulo, .bio__frase {
   padding: 10px; }
 
 .bio__titulo {
+  text-shadow: 1px 2px 2px black;
+  text-align: center;
   color: gray;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: bold;
   font-size: 40px; }
+
+.bio__sub {
+  padding: 10px;
+  text-align: center; }
 
 .bio__sub, .bio__frase {
   margin-top: 5px;
@@ -535,6 +581,7 @@ footer {
   font-weight: bold; }
 
 .bio__frase {
+  padding-right: 70px;
   text-align: center; }
 
 .contenedor__biosub, .contenedor__biocontenido {
@@ -542,12 +589,15 @@ footer {
 
 .bio__imagen {
   width: 20%;
-  height: 100%; }
+  height: 70%;
+  margin-left: 40px;
+  padding-bottom: 25px; }
 
 .bio__parrafo {
   text-align: left;
   font-size: 20px; }
 
+/*Icono puzzle*/
 .contenedor__icon .icon {
   height: 100%;
   width: 10%; }
@@ -557,15 +607,16 @@ footer {
   margin-left: auto;
   margin-right: auto; }
 
-.contenedor__frase .contenedor__frase__img #fraseimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/*Carousel biografia */
+.contenedor__frase .carousel-inner .carousel-item .fraseimg {
   height: 300px;
-  width: 300px;
+  width: 280px;
   padding-bottom: 20px;
-  padding-left: 20px; }
+  padding-left: 30px;
+  margin-left: 65px;
+  margin-right: auto; }
 
+/*Boton Mas informacion*/
 .btn-outline-secondary {
   padding: 15px;
   margin-bottom: 50px; }

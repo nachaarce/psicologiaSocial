@@ -3,6 +3,8 @@
     font-family: $title-font;
     
     .contenedor__titulonos__uno {
+        margin-top: 5px;
+        text-align: center;
         color: $cool-black;
         font-family: 'Mukta', sans-serif;
     }
@@ -36,8 +38,8 @@
     } 
 }
 .contenedornos__fotomaria:hover{
-    width: 52%;
-    height:100% ;
+    width: 51%;
+    height:101% ;
 }
 .contenedornos__fotogabriela:hover {
     @extend .contenedornos__fotomaria:hover;
@@ -54,8 +56,15 @@
         margin:10px;
         width: 100%;
     }
+    }
+.contenedor__parafo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     .bio {
-        margin-left: 15px;
+        width: 30%;
+        margin-left: 10px;
         background:powderblue;
         text-align:justify;
         padding: 20px;
@@ -64,5 +73,5 @@
         &:hover {
             background: rgb(194, 142, 194);
         }
-    }
+}
 }

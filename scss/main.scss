@@ -9,7 +9,9 @@
 * {
     font-family: $title-font;
 }
-/*-------------------ICON BODY------------------*/
+/*-------------------Pagina Inicio ------------*/
+/*-------------------BODY------------------*/
+/*-Carousel-*/
 .titulo__carousel {
     padding-bottom: 150px;
     font-size: 65px;
@@ -18,9 +20,9 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     animation-duration: 3s;
-    animation-name: bounce;
+    animation-name: fadeIn;
 }
-@keyframes bounce {
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -46,6 +48,7 @@
     }
     
 }
+/*-Boton Ver mas -*/
 .btn-light {
     position: relative;
     vertical-align:top;
@@ -58,6 +61,7 @@
         border-radius: 0.25rem;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+/*-Frase-*/
 .contenedor__titulo__2--white {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -67,6 +71,7 @@
     animation-name: bounce;
     font-size: 25px;
 }
+/*-Icono puzzle-*/
 .contenedor__icon .icon {
     height: 100%;
     width: 10%;
@@ -74,15 +79,23 @@
     margin-left: auto;
     margin-right: auto;
 }
-.bio__titulo, .bio__sub, .bio__frase {
+
+/*--Biografia Pichon Riviere--*/
+.bio__titulo,.bio__frase {
     padding: 10px;
 }
 .bio__titulo {
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+    text-align: center;
     color: gray;
     font-family:'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
     font-size: 40px;
+}
+.bio__sub{
+    padding: 10px;
+    text-align: center;
 }
 .bio__sub, .bio__frase {
     margin-top: 5px;
@@ -91,20 +104,24 @@
     font-weight: bold;
 }
 .bio__frase {
+    padding-right: 70px;
     text-align: center;
+    
 }
-
 .contenedor__biosub, .contenedor__biocontenido {
     background-color: rgba(90, 90, 90, 0.596);
 }
 .bio__imagen {
     width: 20%;
-    height: 100%;
+    height: 70%;
+    margin-left: 40px;
+    padding-bottom: 25px;
 }
 .bio__parrafo {
     text-align: left;
     font-size: 20px;
     }
+/*Icono puzzle*/
     .contenedor__icon .icon {
         height: 100%;
         width: 10%;
@@ -114,16 +131,16 @@
     margin-left: auto;
     margin-right: auto;
     }
-
-.contenedor__frase .contenedor__frase__img #fraseimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/*Carousel biografia */
+.contenedor__frase .carousel-inner .carousel-item .fraseimg {
     height: 300px;
-    width: 300px;
+    width: 280px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
+    margin-left: 65px;
+    margin-right: auto;
 }
+/*Boton Mas informacion*/
 .btn-outline-secondary {
     padding: 15px;
     margin-bottom: 50px;

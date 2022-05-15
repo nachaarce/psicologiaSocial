@@ -1,14 +1,58 @@
     footer {
         background: rgb(221, 221, 221);
     }
-    .footer__logos .linklogos {
+        /*Links utiles*/
+        .lista__links {
+            .footer__links{
+        @extend .footer__titulo__logos;
+        margin-left: 30px;
+    }
+        }
+        .footer__lista1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items:center;
+            list-style: none;
+            li {
+            text-align: center;
+            padding-top: 10px;
+            list-style: none;
+            color:$gris;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .footerlink {
+            padding: 3px;
+            margin: 2px;
+            text-decoration: none;
+            color: rgb(92, 90, 90);
+            font-weight: bold;
+            &:hover {
+                color: purple;
+            }
+        }
+        }
+
+    /*Logos*/
+    .footer__titulo__logos{
+        text-decoration: underline;
+        text-align: center;
+        color: rgb(92, 90, 90);
+        margin-top: 20px;
+        padding-top: 10px;
+        margin-left: 25px;
+        font-weight: bold;
+    }
+    .footer__logos { 
+        .linklogos {
         list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .icono__footer {
-        margin-top: 15px;
+        margin-top: 6px;
         font-size: 1.5em;
         margin-left: auto;
         margin-right: auto;
@@ -32,49 +76,14 @@
             @extend .iglogo:hover;
         }
     }
-    .footer__contact {
-        display: block;
-        text-align: center;
-        font-size: 20px;
-    }
+}
+/*Terminos y condiciones*/
     .footer__lista2 {
         list-style: none;
         text-align: center;
         color: $gris;
         margin-top: 20px;
         padding-top: 10px;
-
-    }
-    .footer__lista1 li {
-        text-align: center;
-        padding-top: 10px;
-        list-style: none;
-        color:$gris;
-        font-weight: bold;
-        font-size: 18px;
-    }
-    .footerlink {
-        padding: 3px;
-        margin: 2px;
-        text-decoration: none;
-        color: rgb(92, 90, 90);
-        font-weight: bold;
-        &:hover {
-            color: purple;
-        }
-    }
-    .footer__title {
-        text-decoration: underline;
-        text-align: center;
-        color: rgb(92, 90, 90);
-        margin-top: 20px;
-        padding-top: 10px;
-        margin-left: 25px;
-        font-weight: bold;
-    }
-    .footer__taller {
-        @extend .footer__title;
-        margin-left: 30px;
     }
     .inicio__footer {
         color: $gris;
