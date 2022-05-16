@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*---------------------------MAPS---------------------*/
 .btn--rosabtn {
   background-color: #F7D4BC; }
@@ -103,176 +104,6 @@
     transition: 1s all; }
     .contenedor__parafo .bio:hover {
       background: #c28ec2; }
-
-/*---------------------------------TABLET*-------------------*/
-@media screen and (max-width: 768px) {
-  /*Pagina index*/
-  .carousel-inner .carousel-item img {
-    height: 300px; }
-  .titulo__carousel {
-    padding-bottom: 100px;
-    padding-top: 100px;
-    font-size: 20px; }
-  .contenedor__biocontenido .bio__parrafo {
-    font-size: 15px; }
-  /*Biografia*/
-  .contenedor__biosub .bio__frase {
-    text-align: right; }
-  .carousel .carousel-inner {
-    height: 80%; }
-    .carousel .carousel-inner .carousel-item .fraseimg {
-      padding-right: 90px; }
-  .carousel-caption .btn-light {
-    width: 20%;
-    font-size: 15px; }
-  .contenedor__informacion .moreinfo {
-    text-align: center;
-    font-size: 12px;
-    padding: 5px; }
-  /*Pagina  talleres*/
-  .contenedor__imagenes .esi, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 15%; }
-  .contenedor__talleres .contenedor__texto {
-    border: solid 1px skyblue; }
-    .contenedor__talleres .contenedor__texto .taller__title {
-      font-size: 35px; }
-    .contenedor__talleres .contenedor__texto .taller__sub {
-      font-size: 22px; }
-    .contenedor__talleres .contenedor__texto .taller__par {
-      font-size: 15px; } }
-
-/*-----------------------------MOBILE-------------------------*/
-@media screen and (max-width: 480px) {
-  /*Pagina INICIO*/
-  /*Logo*/
-  .logo {
-    width: 25%;
-    margin-left: 125px; }
-  /*Carousel*/
-  .carousel-item {
-    height: 350px; }
-    .carousel-item .w-100 {
-      height: 100px;
-      width: 300px;
-      padding-bottom: 200px; }
-  .carousel-caption .titulo__carousel {
-    padding-bottom: 48px;
-    padding-top: 80px;
-    font-size: 35px; }
-  .carousel-caption .btn-light {
-    width: 30%;
-    font-size: 10px; }
-  /*Parrafo*/
-  .contenedor__titulo__2 .contenedor__titulo__2--white {
-    font-size: 20px; }
-  /*Button puzzle*/
-  .contenedor__icon .icon {
-    width: 80%;
-    height: 50%; }
-  .icon {
-    width: 100%; }
-  /*Biografia*/
-  .contenedor__bio .bio__titulo {
-    margin-left: 10px;
-    font-size: 30px; }
-  .contenedor__biosub .bio__sub {
-    text-align: center;
-    font-size: 20px; }
-  .contenedor__biosub .bio__frase {
-    display: none; }
-  .contenedor__biocontenido .bio__parrafo {
-    font-size: 15px; }
-  .contenedor__biocontenido .bio__imagen {
-    display: none; }
-  .contenedor__biocontenido .carousel .carousel-inner {
-    display: none; }
-  /*MAS INFORMACION button*/
-  .contenedor__informacion .moreinfo {
-    font-size: 10px;
-    width: 20%;
-    padding: 10px; }
-  /*FIN DE PAGINA INICIO*/
-  /*Pagina Nosotras*/
-  .contenedornos__nombres {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 15px;
-    width: 50%;
-    height: 50%; }
-  .contenedor__parafo .bio {
-    margin-left: 0px;
-    text-align: justify;
-    font-size: 15px;
-    width: 120%; }
-  .contenedor__icon {
-    display: none; }
-  /*Pagina Contacto*/
-  .fondo__form .texto__formulario {
-    font-size: 30px;
-    width: 90%;
-    margin-top: 10px; }
-  .fondo__form .formulario {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-  .form__boton {
-    width: 30%; }
-  /*Pagina Servicios */
-  .servicios__titulo {
-    font-size: 30px; }
-  .servicios__titulo__contenido, .servicios__titulo__video {
-    font-size: 20px; }
-  div .servicios__charla, div .servicios__charla__dos, div .servicios__entrevistas {
-    font-size: 15px; }
-  .video {
-    width: auto; }
-  /*Pagina Talleres*/
-  .moreinfo {
-    font-size: 10px; }
-  .contenedor__talleres {
-    height: 20%;
-    padding: 5px; }
-    .contenedor__talleres .contenedor__texto {
-      background: #ecb7ec;
-      margin-bottom: 10px;
-      border: solid 2px skyblue; }
-      .contenedor__talleres .contenedor__texto .taller__title {
-        font-size: 30px; }
-      .contenedor__talleres .contenedor__texto .taller__sub {
-        font-size: 20px; }
-      .contenedor__talleres .contenedor__texto .taller__par {
-        font-size: 13px;
-        margin-bottom: 20px; }
-  .contenedor__imagenes .esi, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue {
-    display: none; }
-  /*FOOTER*/
-  /*Links utiles*/
-  .footer__lista1 {
-    margin-right: 20px; }
-  /*Logos*/
-  .lista__logos .footer__logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start; }
-    .lista__logos .footer__logos .linklogos {
-      margin-right: 10px; }
-  .lista__logos .footer__tiulo__logos {
-    text-align: center;
-    margin: 5px;
-    font-size: 18px; }
-  /*Terminos y condiciones*/
-  .footer__lista2 li {
-    text-align: center; }
-  .lista__taller, .lista__logos, .lista__derechos {
-    border-top: solid 2px white; }
-  .lista__derechos .footer__lista2 {
-    font-size: 13px;
-    margin-right: 20px; } }
 
 .fondo__form {
   display: flex;
@@ -489,12 +320,224 @@ footer {
   .inicio__footer:hover {
     color: purple; }
 
+/*---------------------------------TABLET*-------------------*/
+@media screen and (max-width: 768px) {
+  /*Pagina index*/
+  /*Carousel principañ*/
+  .carousel {
+    height: 90%;
+    width: 100%; }
+    .carousel .carousel-item {
+      height: 450px;
+      /* Boton ver mas */ }
+      .carousel .carousel-item .carousel-caption {
+        height: 80%; }
+        .carousel .carousel-item .carousel-caption .titulo__carousel {
+          position: relative;
+          top: 70px;
+          bottom: 20px;
+          padding-bottom: 10px;
+          font-size: 50px; }
+      .carousel .carousel-item .w-100 {
+        height: 100%;
+        width: 60%; }
+      .carousel .carousel-item .btn-light {
+        position: relative;
+        top: 150px;
+        bottom: 10px;
+        height: auto;
+        width: 30%;
+        font-size: 17px; }
+  .contenedor__biocontenido .bio__parrafo {
+    font-size: 17px;
+    text-align: justify; }
+  /*Biografia*/
+  .contenedor__biosub .bio__frase {
+    text-align: right; }
+  /*Carousel biografia*/
+  .carousel-fade {
+    display: block;
+    position: relative;
+    left: 45px; }
+    .carousel-fade .carousel-item {
+      height: 50%; }
+      .carousel-fade .carousel-item #fraseimg {
+        display: block;
+        position: relative;
+        right: 50px;
+        height: 140%; }
+  /*Boton mas informacion*/
+  .contenedor__informacion .moreinfo {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px; }
+  /*Pagina  talleres*/
+  .contenedor__imagenes .esi, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 15%; }
+  .contenedor__talleres .contenedor__texto {
+    border: solid 1px skyblue; }
+    .contenedor__talleres .contenedor__texto .taller__title {
+      font-size: 35px; }
+    .contenedor__talleres .contenedor__texto .taller__sub {
+      font-size: 22px; }
+    .contenedor__talleres .contenedor__texto .taller__par {
+      font-size: 15px; } }
+
+/*-----------------------------MOBILE-------------------------*/
+@media screen and (max-width: 480px) {
+  /*Pagina INICIO*/
+  /*Logo*/
+  .logo {
+    width: 25%;
+    margin-left: 125px; }
+  /*Carousel*/
+  .carousel {
+    height: 70%;
+    width: 100%; }
+    .carousel .carousel-item {
+      position: relative;
+      bottom: 20px;
+      height: 300px;
+      /* Boton ver mas */ }
+      .carousel .carousel-item .carousel-caption {
+        height: 80%; }
+        .carousel .carousel-item .carousel-caption .titulo__carousel {
+          position: relative;
+          bottom: 20px;
+          padding-bottom: 20px;
+          font-size: 27px; }
+      .carousel .carousel-item .w-100 {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 100px; }
+      .carousel .carousel-item .btn-light {
+        position: relative;
+        top: 70px;
+        bottom: 20px;
+        margin-bottom: 5px;
+        height: auto;
+        width: 30%;
+        font-size: 10px; }
+  /*Parrafo*/
+  .contenedor__titulo__2 .contenedor__titulo__2--white {
+    z-index: 10;
+    font-size: 20px; }
+  /*Boton puzzle*/
+  .contenedor__icon .icon {
+    width: 80%;
+    height: 50%; }
+  .icon {
+    width: 100%; }
+  /*Biografia*/
+  .contenedor__bio .bio__titulo {
+    font-size: 30px; }
+  .contenedor__biosub .bio__sub, .contenedor__biosub .bio__frase {
+    text-align: center;
+    font-size: 20px; }
+  .contenedor__biosub .bio__frase {
+    display: none; }
+  .contenedor__biocontenido .bio__parrafo {
+    font-size: 15px; }
+  .contenedor__biocontenido .bio__imagen {
+    display: none; }
+  .contenedor__biocontenido .carousel {
+    display: none; }
+    .contenedor__biocontenido .carousel .carousel-inner {
+      display: none; }
+  /*MAS INFORMACION button*/
+  .contenedor__informacion .moreinfo {
+    font-size: 11px;
+    width: 30%;
+    padding: 10px; }
+  /*FIN DE PAGINA INICIO*/
+  /*Pagina Nosotras*/
+  .contenedornos__nombres {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    width: 50%;
+    height: 50%; }
+  .contenedor__parafo .bio {
+    margin-left: 0px;
+    text-align: justify;
+    font-size: 15px;
+    width: 120%; }
+  .contenedor__icon {
+    display: none; }
+  /*Pagina Contacto*/
+  .fondo__form .texto__formulario {
+    font-size: 30px;
+    width: 90%;
+    margin-top: 10px; }
+  .fondo__form .formulario {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .form__boton {
+    width: 30%; }
+  /*Pagina Servicios */
+  .servicios__titulo {
+    font-size: 30px; }
+  .servicios__titulo__contenido, .servicios__titulo__video {
+    font-size: 20px; }
+  div .servicios__charla, div .servicios__charla__dos, div .servicios__entrevistas {
+    font-size: 15px; }
+  .video {
+    width: auto; }
+  /*Pagina Talleres*/
+  .moreinfo {
+    font-size: 10px; }
+  .contenedor__talleres {
+    height: 20%;
+    padding: 5px; }
+    .contenedor__talleres .contenedor__texto {
+      background: #ecb7ec;
+      margin-bottom: 10px;
+      border: solid 2px skyblue; }
+      .contenedor__talleres .contenedor__texto .taller__title {
+        font-size: 30px; }
+      .contenedor__talleres .contenedor__texto .taller__sub {
+        font-size: 20px; }
+      .contenedor__talleres .contenedor__texto .taller__par {
+        font-size: 13px;
+        margin-bottom: 20px; }
+  .contenedor__imagenes .esi, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue, .contenedor__imagenes .salud, .contenedor__imagenes .puzzleblue {
+    display: none; }
+  /*FOOTER*/
+  /*Links utiles*/
+  .footer__lista1 {
+    margin-right: 20px; }
+  /*Logos*/
+  .lista__logos .footer__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start; }
+    .lista__logos .footer__logos .linklogos {
+      margin-right: 10px; }
+  .lista__logos .footer__tiulo__logos {
+    text-align: center;
+    margin: 5px;
+    font-size: 18px; }
+  /*Terminos y condiciones*/
+  .footer__lista2 li {
+    text-align: center; }
+  .lista__taller, .lista__logos, .lista__derechos {
+    border-top: solid 2px white; }
+  .lista__derechos .footer__lista2 {
+    font-size: 13px;
+    margin-right: 20px; } }
+
 * {
   font-family: "Mukta", sans-serif; }
 
 /*-------------------Pagina Inicio ------------*/
 /*-------------------BODY------------------*/
-/*-Carousel-*/
+/*-Carousel Principal -*/
 .titulo__carousel {
   padding-bottom: 150px;
   font-size: 65px;
@@ -539,7 +582,8 @@ footer {
   border-radius: 0.25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 
-/*-Frase-*/
+/*--Fin de Carousel Principal--*/
+/*-Frase Pichon Riviere-*/
 .contenedor__titulo__2--white {
   margin-top: 30px;
   margin-bottom: 20px;
@@ -558,45 +602,6 @@ footer {
   margin-right: auto; }
 
 /*--Biografia Pichon Riviere--*/
-.bio__titulo, .bio__frase {
-  padding: 10px; }
-
-.bio__titulo {
-  text-shadow: 1px 2px 2px black;
-  text-align: center;
-  color: gray;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 40px; }
-
-.bio__sub {
-  padding: 10px;
-  text-align: center; }
-
-.bio__sub, .bio__frase {
-  margin-top: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: bold; }
-
-.bio__frase {
-  padding-right: 70px;
-  text-align: center; }
-
-.contenedor__biosub, .contenedor__biocontenido {
-  background-color: rgba(90, 90, 90, 0.596); }
-
-.bio__imagen {
-  width: 20%;
-  height: 70%;
-  margin-left: 40px;
-  padding-bottom: 25px; }
-
-.bio__parrafo {
-  text-align: left;
-  font-size: 20px; }
-
 /*Icono puzzle*/
 .contenedor__icon .icon {
   height: 100%;
@@ -607,15 +612,59 @@ footer {
   margin-left: auto;
   margin-right: auto; }
 
-/*Carousel biografia */
-.contenedor__frase .carousel-inner .carousel-item .fraseimg {
-  height: 300px;
-  width: 280px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  margin-left: 65px;
-  margin-right: auto; }
+/*Fondo de biografia*/
+.contenedor__biosub, .contenedor__biocontenido {
+  background-color: rgba(90, 90, 90, 0.596); }
 
+/*Titulo Principal -Quien es Pichon-*/
+.bio__titulo {
+  text-shadow: 1px 2px 2px black;
+  text-align: center;
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px; }
+
+/*Sub-titulos*/
+.bio__sub, .bio__frase {
+  padding: 10px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center; }
+
+.bio__frase {
+  padding-right: 70px;
+  text-align: center; }
+
+/*Imagen de biografia*/
+.bio__imagen {
+  width: 20%;
+  height: 70%;
+  margin-left: 40px;
+  padding-bottom: 25px; }
+
+/*Parrafo de biografia */
+.bio__parrafo {
+  text-align: left;
+  font-size: 20px; }
+
+/*Carousel biografia */
+.carousel-fade {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  height: 60%; }
+
+#fraseimg {
+  align-self: flex-end;
+  margin-left: 75px;
+  height: 40%; }
+
+/*----Fin de Biografia*/
 /*Boton Mas informacion*/
 .btn-outline-secondary {
   padding: 15px;

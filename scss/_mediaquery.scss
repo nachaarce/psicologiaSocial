@@ -2,16 +2,42 @@
 /*---------------------------------TABLET*-------------------*/
 
 @media screen and (max-width: 768px) {
-    /*Pagina index*/
-    .carousel-inner .carousel-item img {
-        height: 300px; }
-        .titulo__carousel {
-            padding-bottom: 100px;
-            padding-top:  100px;
-            font-size: 20px;
-        }
-        .contenedor__biocontenido .bio__parrafo {
-            font-size: 15px;
+    /*Pagina index*/ /*Carousel principañ*/
+.carousel {
+    height: 90%;
+    width: 100%;
+.carousel-item {
+    height: 450px; 
+    .carousel-caption {
+        height: 80%;
+        .titulo__carousel{
+            position: relative;
+            top:70px;
+            bottom: 20px;
+        padding-bottom: 10px;
+        font-size: 50px;
+    }
+}
+    .w-100 {
+        height:100%;
+        width: 60%;
+    }
+      /* Boton ver mas */
+    .btn-light {
+        position: relative;
+        top: 150px;
+        bottom: 10px;
+        height: auto;
+        width: 30%;
+        font-size: 17px;
+    }
+}}
+        .contenedor__biocontenido {
+            .bio__parrafo  {
+                font-size: 17px;
+                text-align: justify;
+            }
+            
         }
         /*Biografia*/
         .contenedor__biosub{
@@ -19,25 +45,27 @@
                 text-align: right;
             }
         }
-            .carousel{
-            .carousel-inner {
-                height: 80%;
+            /*Carousel biografia*/
+            .carousel-fade {
+                display: block;
+                position: relative;
+                left: 45px;
                 .carousel-item {
-                    .fraseimg {
-                        padding-right: 90px;
-                    }
-                }
+                    height: 50%;
+                #fraseimg {
+                    display: block;
+                    position: relative;
+                    right: 50px;
+                    height: 140%;
+                } }
             }
-        }
-        .carousel-caption .btn-light {
-            width: 20%;
-            font-size: 15px;
-        }
+        /*Boton mas informacion*/
         .contenedor__informacion .moreinfo {
             text-align: center;
             font-size: 12px;
             padding: 5px;
         }
+
 /*Pagina  talleres*/
 .contenedor__imagenes {
 .esi, .salud, .puzzleblue {
@@ -72,28 +100,44 @@
         margin-left: 125px;
     }
     /*Carousel*/
+    .carousel {
+        height: 70%;
+        width: 100%;
     .carousel-item {
-        height: 350px; 
-        .w-100 {
-            height: 100px;
-            width: 300px;;
-            padding-bottom: 200px;
+        position: relative;
+        bottom: 20px;
+        height: 300px; 
+        .carousel-caption {
+            height: 80%;
+            .titulo__carousel{
+                position: relative;
+                bottom: 20px;
+            padding-bottom: 20px;
+            font-size: 27px;
         }
     }
-    .carousel-caption .titulo__carousel{
-        padding-bottom: 48px;
-        padding-top:  80px;
-        font-size: 35px;
-    }
-    .carousel-caption .btn-light {
-        width: 30%;
-        font-size: 10px;
-    }
+        .w-100 {
+            height: 100%;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+          /* Boton ver mas */
+        .btn-light {
+            position: relative;
+            top: 70px;
+            bottom: 20px;
+            margin-bottom: 5px;
+            height: auto;
+            width: 30%;
+            font-size: 10px;
+        }
+    }}
     /*Parrafo*/
-    .contenedor__titulo__2 .contenedor__titulo__2--white {
+    .contenedor__titulo__2 {.contenedor__titulo__2--white {
+        z-index: 10;
         font-size: 20px;
-    }
-    /*Button puzzle*/
+    }}
+    /*Boton puzzle*/
     .contenedor__icon .icon {
         width: 80%;
         height: 50%;
@@ -104,7 +148,6 @@
     /*Biografia*/
     .contenedor__bio {
         .bio__titulo{
-            margin-left: 10px;
         font-size: 30px;
     }
     }
@@ -124,7 +167,8 @@
 .bio__imagen {
     display: none;
     }
-    .carousel{
+    .carousel {
+        display: none;
         .carousel-inner {
             display: none;
             }
@@ -132,8 +176,8 @@
 }
 /*MAS INFORMACION button*/
 .contenedor__informacion .moreinfo {
-    font-size: 10px;
-    width: 20%;
+    font-size: 11px;
+    width: 30%;
     padding: 10px;
 }
 /*FIN DE PAGINA INICIO*/
