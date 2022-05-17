@@ -153,7 +153,8 @@
     }
     .contenedor__biosub {
         .bio__sub{
-            display: none;
+            padding: 5px;
+            font-size: 20px;
         }
         .bio__frase {
             display: none;
@@ -161,8 +162,7 @@
     }
 .contenedor__biocontenido {
     .bio__parrafo {
-        padding: 15px;
-        margin-top: 10px;
+    padding: 5px 10px;
     font-size: 15px;
     }
 .bio__imagen {

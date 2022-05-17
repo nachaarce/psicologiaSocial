@@ -447,12 +447,12 @@ footer {
     margin-top: 17px;
     font-size: 27px; }
   .contenedor__biosub .bio__sub, .contenedor__biosub .bio__frase {
-    display: none; }
+    padding: 5px;
+    font-size: 20px; }
   .contenedor__biosub .bio__frase {
     display: none; }
   .contenedor__biocontenido .bio__parrafo {
-    padding: 15px;
-    margin-top: 10px;
+    padding: 5px 10px;
     font-size: 15px; }
   .contenedor__biocontenido .bio__imagen {
     display: none; }
