@@ -28,17 +28,15 @@
 }
 /*Imagenes de las profesionales*/  
 .contenedornos__fotos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     height: 100%;
     background: $back-ground;
     .contenedornos__fotomaria, .contenedornos__fotogabriela, .contenedornos__fotolozano {
-        margin-left: 100px;
-        width: 50%;
-        height: 100%;
-        transition: all 1s;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+    transition: all 1s;
     } 
 }
 /*Transitions*/

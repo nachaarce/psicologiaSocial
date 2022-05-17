@@ -56,14 +56,12 @@
 
 /*Imagenes de las profesionales*/
 .contenedornos__fotos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   height: 100%;
   background: rgba(185, 120, 185, 0.678); }
   .contenedornos__fotos .contenedornos__fotomaria, .contenedornos__fotos .contenedornos__fotogabriela, .contenedornos__fotos .contenedornos__fotolozano {
-    margin-left: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     height: 100%;
     transition: all 1s; }
@@ -460,7 +458,7 @@ footer {
     display: none; }
     .contenedor__biocontenido .carousel .carousel-inner {
       display: none; }
-  /*MAS INFORMACION button*/
+  /*MAS INFORMACION boton*/
   .contenedor__informacion .moreinfo {
     font-size: 11px;
     width: 30%;
