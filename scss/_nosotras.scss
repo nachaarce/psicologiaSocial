@@ -1,3 +1,4 @@
+/*Titulo principal de la Pagina*/
 .contenedor__titulonos {
     background: $back-ground;
     font-family: $title-font;
@@ -12,6 +13,7 @@
         color:rgb(173, 39, 190)
     }
 }
+/*Descripcion*/
 .contenedor__parrafonos {
     color: $cool-black;
     text-align: center;
@@ -24,19 +26,22 @@
         
     }
 }
+/*Imagenes de las profesionales*/  
 .contenedornos__fotos {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     height: 100%;
     background: $back-ground;
     .contenedornos__fotomaria, .contenedornos__fotogabriela, .contenedornos__fotolozano {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 100px;
         width: 50%;
         height: 100%;
         transition: all 1s;
     } 
 }
+/*Transitions*/
 .contenedornos__fotomaria:hover{
     width: 51%;
     height:101% ;
@@ -47,6 +52,7 @@
 .contenedornos__fotolozano:hover {
     @extend .contenedornos__fotomaria:hover;
 }
+/*Nombres de las profesionales*/
 .contenedornos__nombres {
     text-align: center;
     margin: 5px;
@@ -57,6 +63,7 @@
         width: 100%;
     }
     }
+/*Descripcion de las profesionales*/
 .contenedor__parafo {
     display: flex;
     flex-direction: row;

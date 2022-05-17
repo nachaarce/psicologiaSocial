@@ -1,3 +1,4 @@
+    /*Titulo principal*/
     .servicios__titulo {
         display: block;
         margin-right: auto;
@@ -10,12 +11,13 @@
     padding-bottom: 5px;
     border-bottom: solid  3px #c24772;
     }
-
+/*Subtitulo de servicios*/
 .servicios__titulo__contenido {
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
 }
+/*Descripcion de servicios*/
 .servicios__charla {
     border:solid 2px #CFA5B4;
     text-align: center;
@@ -34,10 +36,10 @@
 .servicios__entrevistas {
     @extend .servicios__charla;
 }
+/*Video informativo*/
 .servicios__titulo__video {
     @extend .servicios__titulo__contenido;
     margin-bottom: 20px;
-
 }
     .contenedor__video {
         vertical-align: middle;
@@ -50,7 +52,7 @@
             margin-bottom: 30px;
         }
     }
-
+/*Boton mas informacion*/
     .btn, .moreinfo {
         display: block;
         margin-left: auto;

@@ -1,24 +1,4 @@
-.contenedor__talleres {
-    border: solid 2px skyblue;
-    .taller__title {
-        text-align: center;
-        margin-top: 30px;
-        font-size: 50px;
-    }
-.taller__sub {
-        text-align: center;
-        margin-bottom: 10px;
-        padding: 5px;
-    }
-    .taller__par {
-        text-align:justify;
-        margin-top: 10px;   
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        height: 15%;
-    }
-}
+/*Imagenes de talleres*/
 .contenedor__imagenes {
     display: flex;
     flex-direction: row;
@@ -41,13 +21,12 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
 .esi, .salud, .puzzleblue {
 width: 20%;
 height: 15%;
 transition: all 1s;
 }
-
+/*Transitions de imagenes*/
 .esi:hover {
     width: 21%;
     height: 18%;
@@ -58,3 +37,29 @@ transition: all 1s;
 .puzzleblue:hover {
     @extend .esi:hover;
 }
+/*Descripcion de talleres*/
+.contenedor__talleres {
+    border: solid 2px skyblue;
+    /*Tiutlo*/
+    .taller__title {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 50px;
+    }
+    /*Subtitulo*/
+.taller__sub {
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    /*Contenido del taller*/
+    .taller__par {
+        text-align:justify;
+        margin-top: 10px;   
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 15%;
+    }
+}
+

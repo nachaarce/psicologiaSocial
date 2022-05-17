@@ -10,7 +10,7 @@
     font-family: $title-font;
 }
 /*-------------------Pagina Inicio ------------*/
-/*-------------------BODY------------------*/
+
 /*-Carousel Principal -*/
 .titulo__carousel {
     padding-bottom: 150px;
@@ -22,6 +22,7 @@
     animation-duration: 3s;
     animation-name: fadeIn;
 }
+/*Animacion*/
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -81,7 +82,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
 /*--Biografia Pichon Riviere--*/
 /*Icono puzzle*/
     .contenedor__icon .icon {
